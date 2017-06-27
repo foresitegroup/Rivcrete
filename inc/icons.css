@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Rivcrete';
+  src:  url('fonts/Rivcrete.eot?5a70fr');
+  src:  url('fonts/Rivcrete.eot?5a70fr#iefix') format('embedded-opentype'),
+    url('fonts/Rivcrete.ttf?5a70fr') format('truetype'),
+    url('fonts/Rivcrete.woff?5a70fr') format('woff'),
+    url('fonts/Rivcrete.svg?5a70fr#Rivcrete') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fg {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Rivcrete' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fg-facebook:before {
+  content: "\e901";
+}
+.fg-twitter:before {
+  content: "\e902";
+}
+.fg-instagram:before {
+  content: "\e903";
+}
+.fg-youtube:before {
+  content: "\e904";
+}
+.fg-linkedin:before {
+  content: "\e905";
+}
+.fg-hamburger-menu:before {
+  content: "\e911";
+}
+.fg-close:before {
+  content: "\e912";
+}

@@ -1,0 +1,407 @@
+/*
+#FDC116 - yellow
+
+font-family: 'Squada One', cursive;
+*/
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNovaSemibold.eot');
+  src: url('fonts/ProximaNovaSemibold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaSemibold.woff2') format('woff2'),
+       url('fonts/ProximaNovaSemibold.woff') format('woff'),
+       url('fonts/ProximaNovaSemibold.ttf') format('truetype'),
+       url('fonts/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNovaExtrabold.eot');
+  src: url('fonts/ProximaNovaExtrabold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaExtrabold.woff2') format('woff2'),
+       url('fonts/ProximaNovaExtrabold.woff') format('woff'),
+       url('fonts/ProximaNovaExtrabold.ttf') format('truetype'),
+       url('fonts/ProximaNovaExtrabold.svg#MarkSimonsonProximaNovaExtrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNovaBlack.eot');
+  src: url('fonts/ProximaNovaBlack.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaBlack.woff2') format('woff2'),
+       url('fonts/ProximaNovaBlack.woff') format('woff'),
+       url('fonts/ProximaNovaBlack.ttf') format('truetype'),
+       url('fonts/ProximaNovaBlack.svg#MarkSimonsonProximaNovaBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+BODY {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+}
+
+IMG {
+  border: 0;
+}
+
+HR {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+A:link, A:visited {
+  color: #0000FF;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+A:hover, A:active {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+H1 {
+  font-size: 170%;
+  margin: 0 0 0.5em;
+}
+
+H2 {
+  font-size: 150%;
+  margin: 0 0 0.5em;
+}
+
+.site-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-width:after,
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#header-spacer { height: 104px; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 10%, #000000 10%, #000000);
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.25);
+}
+
+#header.sticky {
+  background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 10%, #FDC116 10%, #FDC116);
+}
+
+#header.sticky .site-width { position: relative; }
+
+#logo {
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 18px 38px 14px 56px;
+  position: relative;
+  z-index: 1;
+}
+
+#header.sticky #logo { padding: 11px 68px 7px 0; }
+
+#logo:after {
+  background: inherit;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewX(-15deg) translateX(50%);
+  height: 100%;
+  width: 28px;
+}
+
+#header.sticky #logo:after { width: 20px; }
+
+#logo IMG {
+  height: 67px;
+  width: auto;
+}
+
+#header.sticky #logo IMG { height: 41px; }
+
+#show-menu, #menu-toggle { display: none; }
+
+#menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#header.sticky #menu { right: 7%; font-size: 16px; line-height: 1em; }
+
+#menu LI {
+  display: inline-block;
+  padding-right: 5.5vw;
+}
+
+#menu LI#phone {
+  margin-left: 2vw;
+  border: 6px solid #FFFFFF;
+  padding: 0.7em 1em;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+#header.sticky #menu LI#phone {
+  margin-left: 0;
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1em;
+  color: #000000;
+}
+
+#menu LI A {
+  color: #FDC116;
+  position: relative;
+}
+
+#header.sticky #menu LI A {
+  color: #000000;
+}
+
+#menu LI A:before,
+#menu LI A:after {
+  content: "";
+  border-bottom: 1px solid #FDC116;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  transition: all 0.5s ease;
+}
+
+#header.sticky #menu LI A:before,
+#header.sticky #menu LI A:after { border-color: #000000; }
+
+#menu LI A:after {
+  left: auto;
+  right: 0;
+  bottom: -6px;
+}
+
+#menu LI A:hover:before,
+#menu LI A:hover:after { width: 100%; }
+
+#home-banner {
+  max-height: 684px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#home-banner:before {
+  content: "";
+  display: block;
+  padding-top: 47.5%;
+}
+
+#home-banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+  #menu LI { padding-right: 4vw; }
+  #header.sticky #menu LI { padding-right: 5.5vw; }
+
+  #menu LI#phone { margin-left: 0; }
+}
+
+@media only screen and (max-width: 1200px) {
+  .site-width { width: 96%; }
+
+  #logo { padding-left: 2%; }
+  #menu { right: 2%; }
+}
+
+@media only screen and (max-width: 1100px) {
+  #header.sticky #menu { right: 3.5%; }
+
+  #menu LI { padding-right: 2vw; }
+}
+
+@media only screen and (max-width: 1050px) {
+  #menu { font-size: 17px; line-height: 1em; }
+  #header.sticky #menu { right: 0; }
+
+  #menu LI { padding-right: 1.7vw; }
+  #menu LI#phone { font-size: 14px; line-height: 1em; }
+}
+
+@media only screen and (max-width: 1000px) {
+  #header-spacer { height: 87px; }
+
+  #logo IMG { height: 50px; }
+  
+  #menu { font-size: 16px; line-height: 1em; }
+  
+  #menu LI { padding-right: 3vw; }
+  #header.sticky #menu LI { padding-right: 4vw; }
+}
+
+@media only screen and (max-width: 900px) {
+  #header-spacer { height: 64px; }
+
+  #header.sticky .site-width { width: 100%; }
+  
+  #header.sticky #logo,
+  #logo { padding: 11px 48px 7px 2%; }
+  #logo:after { width: 20px; }
+  #logo IMG { height: 41px; }
+
+  #header.sticky #menu { right: 2%; }
+  
+  #header.sticky #menu LI,
+  #menu LI { padding-right: 2vw; }
+
+  #menu LI#phone { border-width: 4px; font-size: 13px; line-height: 1em; }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Small computer or landscape tablet */
+  #header-spacer { height: 104px; }
+
+  #logo { padding: 18px 38px 14px 2%; }
+  #logo:after { width: 28px; }
+  #logo IMG { height: 67px; }
+
+  #menu { display: none; }
+
+  #menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    font-size: 42px;
+  }
+
+  #menu-toggle:after {
+    font-family: "Rivcrete";
+    content: "\e911";
+    color: #FFFFFF;
+    font-size: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #show-menu:checked + #menu-toggle:after {
+    content: "\e912";
+  }
+
+  #show-menu:checked + #menu-toggle + #menu {
+    display: block;
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-top: 0.7em;
+    background: #FDC116;
+    text-align: center;
+    font-size: 6vw;
+    line-height: 0.9em;
+  }
+
+  #menu LI {
+    display: block;
+    padding: 0.4em 0;
+  }
+
+  #menu LI#phone,
+  #header.sticky #menu LI#phone {
+    margin-left: 0;
+    border: 0;
+    padding: 1em 0;
+    font-weight: inherit;
+    font-size: inherit;
+    color: #000000;
+  }
+
+  #menu LI A { color: #000000; }
+
+  #menu LI A:before,
+  #menu LI A:after { border-color: #000000; bottom: 0; }
+
+  #menu LI A:after { bottom: -1px; }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Small tablet */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Phone */
+}
+
+@media only screen and (max-width: 320px) {
+  /* Small Phone */
+  #header-spacer { height: 88px; }
+
+  #logo { padding: 16px 15px 12px 2%; }
+  #logo IMG { height: 55px; }
+}
