@@ -97,13 +97,15 @@ H2 {
   clear: both;
 }
 
+.yellowtext { color: #FDC116; }
+
 #header-spacer { height: 104px; }
 
 #header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 50;
   width: 100%;
   background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 10%, #000000 10%, #000000);
   box-shadow: 0 0 25px 0 rgba(0,0,0,0.25);
@@ -243,7 +245,235 @@ H2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.45);
+}
+
+#home-banner .site-width {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  color: #FDC116;
+  font-weight: 900;
+  font-size: 1.185vw;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+#home-banner .site-width .left {
+  display: inline-block;
+  width: 48vw;
+}
+
+#home-banner H1 {
+  margin: 0 0 0.4em;
+  color: #FFFFFF;
+  font-family: 'Squada One', cursive;
+  font-weight: normal;
+  font-size: 500%;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+}
+
+#home-banner A:link,
+#home-banner A:visited {
+  display: inline-block;
+  margin-top: 5em;
+  border: 7px solid #FDC116;
+  padding: 0.8em 1.3em 0.8em 1.45em;
+  background: #000000;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 94%;
+  line-height: 1em;
+  letter-spacing: 0.15em;
+}
+
+#home-banner A:hover,
+#home-banner A:active {
+  background: #FDC116;
+  color: #000000;
+}
+
+#home-about {
+  padding: 2.1em 0;
+  background: #FDC116;
+  color: #000000;
+  font-family: 'Squada One', cursive;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.25em;
+}
+
+#home-about .site-width { position: relative; z-index: 1; }
+
+#home-about .site-width .text {
+  display: inline-block;
+  width: 42%;
+}
+
+#home-about A:link,
+#home-about A:visited {
+  margin-top: 3.5em;
+  display: inline-block;
+  color: #000000;
+  font-family: 'Proxima Nova';
+  font-weight: 900;
+  font-size: 35%;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+}
+
+#home-about A:hover,
+#home-about A:active {
+  color: #FFFFFF;
+}
+
+#home-about A:after {
+  font-family: "Rivcrete";
+  content: "\e913";
+  font-size: 90%;
+  position: relative;
+  top: 0.045em;
+}
+
+#home-about .image {
+  position: absolute;
+  top: -0.25em;
+  right: 0;
+  width: 41.7vw;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
+  background: url(../images/home-about.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#home-about .image:before {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  transform: translateY(50%);
+  z-index: -1;
+  width: 72%;
+  height: 1.25em;
+  background: #000000;
+}
+
+#home-about .image:after {
+  content: "";
+  display: block;
+  padding-top: 71.5%;
+}
+
+.home-products {
+  padding: 90px 0 120px;
+  position: relative;
+}
+
+.home-products .slides {
+  width: 48%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+}
+
+.home-products .cycle-slideshow {
+  margin-top: 4em;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
+}
+
+.home-products .cycle-slideshow IMG {
+  max-width: 100%;
+  height: auto;
+}
+
+#p-pager {
+  position: absolute;
+  bottom: -2.4em;
+  left: -0.75em;
+  background: #000000;
+  padding: 1.2em 1.5em 0.9em;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0;
+}
+
+#p-pager A:link,
+#p-pager A:visited {
+  color: #FFFFFF;
+  margin: 0 0.4em;
+}
+
+#p-pager A.cycle-pager-active,
+#p-pager A:hover,
+#p-pager A:active {
+  color: #FDC116;
+}
+
+.home-products .text {
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  transform: translateY(-42%);
+  box-sizing: border-box;
+  font-family: 'Squada One', cursive;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+.home-products .text .yellowtext {
+  font-size: 73%;
+  line-height: 1em;
+  position: relative;
+  top: -0.07em;
+}
+
+.home-products .text A:link,
+.home-products .text A:visited {
+  margin-top: 4em;
+  display: inline-block;
+  border: 7px solid #000000;
+  padding: 1em 1.5em 0.9em;
+  font: 900 14px/1em 'Proxima Nova';
+  color: #000000;
+}
+
+.home-products .text A:hover,
+.home-products .text A:active {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+
+#home-testimonials {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4em 0;
+}
+
+#home-order {
+  background: #FDC116;
+  text-align: center;
+  padding: 4em 0;
+}
+
+#prefooter {
+  text-align: center;
+  padding: 4em 0;
+}
+
+#footer {
+  background: #000000;
+  color: #FDC116;
+  text-align: center;
+  padding: 4em 0;
 }
 
 
@@ -253,6 +483,25 @@ H2 {
 
 
 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2000px) {
+  #home-banner .site-width { font-size: 22px; }
+  #home-banner .site-width .left { width: 72%; }
+}
+
+@media only screen and (min-width: 1600px) {
+  #home-about { padding: 1.3em 0; font-size: 44px; }
+  #home-about .site-width .text { width: 45%; }
+  #home-about .image { width: 50%; }
+}
 
 @media only screen and (max-width: 1300px) {
   #menu LI { padding-right: 4vw; }
@@ -266,12 +515,20 @@ H2 {
 
   #logo { padding-left: 2%; }
   #menu { right: 2%; }
+
+  #home-about { font-size: 40px; }
+  #home-about .site-width .text { width: 48%; }
+  #home-about .image { right: 2%; width: 46%; }
+
+  .home-products .text { transform: translateY(-50%); }
 }
 
 @media only screen and (max-width: 1100px) {
   #header.sticky #menu { right: 3.5%; }
 
   #menu LI { padding-right: 2vw; }
+
+  .home-products .text { right: 9%; }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -291,6 +548,13 @@ H2 {
   
   #menu LI { padding-right: 3vw; }
   #header.sticky #menu LI { padding-right: 4vw; }
+
+  #home-banner .site-width { font-size: 1.5vw; }
+  #home-banner .site-width .left { width: 60vw; }
+
+  #home-banner A:link, #home-banner A:visited { margin-top: 2.5em; }
+
+  #home-about { padding: 1.5em 0 1em; }
 }
 
 @media only screen and (max-width: 900px) {
@@ -309,6 +573,10 @@ H2 {
   #menu LI { padding-right: 2vw; }
 
   #menu LI#phone { border-width: 4px; font-size: 13px; line-height: 1em; }
+  
+  #home-about { font-size: 4.2vw; }
+  #home-about .image { top: 0; }
+  #home-about .image:before { height: 1em; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -384,14 +652,27 @@ H2 {
   #menu LI A:after { border-color: #000000; bottom: 0; }
 
   #menu LI A:after { bottom: -1px; }
+
+  .home-products .text { font-size: 40px; }
+
+  .home-products .text A:link,
+  .home-products .text A:visited { margin-top: 2em; font-size: 13px; }
 }
 
 @media only screen and (max-width: 768px) {
   /* Tablet */
+  .home-products .text { right: 2%; }
 }
 
 @media only screen and (max-width: 600px) {
   /* Small tablet */
+  #home-banner .site-width { font-size: 2vw; }
+  #home-banner .site-width .left { width: 100%; }
+  #home-banner H1 { font-size: 350%; }
+
+  #home-about { font-size: 40px; padding-bottom: 68vw; }
+  #home-about .site-width .text { width: 100%; }
+  #home-about .image { margin-top: 7vw; top: 100%; right: 4%; width: 94%; }
 }
 
 @media only screen and (max-width: 480px) {

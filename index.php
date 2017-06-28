@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    
+
     <title>RIV/CRETE<?php if (isset($PageTitle)) echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    
+
     <meta name="description" content="">
     <meta name="keywords" content="">
-    
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Squada+One">
     <link rel="stylesheet" href="inc/icons.css?<?php echo filemtime('inc/icons.css'); ?>">
     <link rel="stylesheet" href="inc/main.css?<?php echo filemtime('inc/main.css'); ?>">
-    
+
     <script type="text/javascript" src="inc/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="inc/jquery.waypoints.min.js"></script>
     <script type="text/javascript">
@@ -30,12 +30,12 @@
     </script>
   </head>
   <body>
-    
+
     <div id="header-spacer"></div>
     <div id="header">
       <div>
         <a href="." id="logo"><img src="images/logo.png" alt="RIV/CRETE"></a>
-        
+
         <input type="checkbox" id="show-menu" role="button">
         <label for="show-menu" id="menu-toggle"></label>
         <ul id="menu">
@@ -47,21 +47,76 @@
       </div>
     </div>
 
-    <div id="home-banner" style="background-image: url(images/banner-home.jpg);"></div>
+    <div id="home-banner" style="background-image: url(images/banner-home.jpg);">
+      <div class="site-width">
+        <div class="left">
+          <h1>Readymix Concrete Decorative Building Products</h1>
 
-    <div class="site-width">
-      <h1>Content (H1)</h1>
-      
-      Bacon ipsum dolor sit amet sausage bacon biltong, salami drumstick hamburger ham hock. Filet mignon ribeye meatball flank tri-tip tongue boudin, doner pig tenderloin. Beef cow turducken pork belly. Corned beef andouille short loin spare ribs. Short ribs frankfurter pig beef ribs. Sausage salami kielbasa cow jowl. Pork ribeye sirloin sausage bacon ham swine turkey biltong tenderloin boudin beef ribs pig hamburger.<br>
-      <br>
-      
-      Pig shankle andouille venison ham frankfurter strip steak ham hock, swine jerky ball tip flank hamburger. Leberkas cow short loin capicola ham hock bresaola. Pig beef ribs salami shankle, ham hock shank flank kielbasa sausage hamburger tenderloin. Salami shankle prosciutto sausage pork chop tri-tip. Short loin shankle tail capicola bresaola chuck drumstick pork belly t-bone shoulder hamburger salami corned beef leberkas meatloaf. Corned beef t-bone drumstick jowl shoulder brisket sirloin meatball turkey.<br>
-      <br>
-      
-      Bacon sirloin jowl tail pork loin corned beef sausage ribeye rump. Pork chop spare ribs turkey andouille strip steak. Venison pig bresaola ground round. Leberkas frankfurter pastrami prosciutto bresaola jowl.
+          / READY WHEN YOU ARE<br>
 
-      <div style="height: 2000px; width: 5px; margin: 0 auto; background: #FDC116;"></div>
+          <a href="#">ORDER CONCRETE</a>
+        </div>
+      </div>
     </div>
-    
+
+    <div id="home-about">
+      <div class="site-width">
+        <div class="text">
+          Rivcrete is a family owned company in the Milwaukee area that delivers concrete at the highest levels of quality and standards.<br>
+
+          <a href="#">LEARN MORE</a>
+        </div>
+
+        <div class="image"></div>
+      </div>
+    </div>
+
+    <div class="site-width home-products">
+      <div class="slides">
+        RIVCRETE SPECIALIZES IN:
+
+        <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
+        <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+          <img src="images/home-slider1.jpg" alt="">
+          <img src="images/home-slider2.jpg" alt="">
+          <img src="images/home-slider3.jpg" alt="">
+          <img src="images/home-slider4.jpg" alt="">
+          <img src="images/home-slider5.jpg" alt="">
+
+          <div id="p-pager"></div>
+        </div>
+      </div>
+
+      <div class="text">
+        <span class="yellowtext">/</span> COMMERCIAL<br>
+        <span class="yellowtext">/</span> INDUSTRIAL<br>
+        <span class="yellowtext">/</span> PRIVATE<br>
+        <span class="yellowtext">/</span> RESIDENTIAL<br>
+
+        <a href="#">PRODUCTS &amp; SERVICES</a>
+      </div>
+    </div>
+
+    <div id="home-testimonials">
+      <div class="site-width">
+        TESTIMONIALS
+      </div>
+    </div>
+
+    <div id="home-order">
+      ORDER CONCRETE
+    </div>
+
+    <div id="home-images">
+      IMAGES
+    </div>
+
+    <div id="prefooter">
+      PREFOOTER
+    </div>
+
+    <div id="footer">
+      FOOTER
+    </div>
   </body>
 </html>
