@@ -1,0 +1,51 @@
+    <div id="testimonials">
+      <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-auto-height="container" data-cycle-timeout="6000" data-cycle-pager="#t-pager" data-cycle-pager-template="<a href=#></a>">
+        <div>
+          &ldquo;A company that knows its customers as well as it knows the products that it sells.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Gary Wallis, St. Mary's Cement</div>
+        </div>
+        <div>
+          &ldquo;Riv/Crete Ready Mix is a valued producer member of the Wisconsin Ready Mixed Concrete Association (WRMCA). Nicholas Rivecca is a respected past president of the WRMCA.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Cherish Schween, Executive Director of WRMCA</div>
+        </div>
+        <div>
+          &ldquo;Riv/Crete Ready Mix brings to the concrete industry an extremely knowledgeable staff of concrete experts.  Using state of the art concrete plants and admixtures, Riv/Crete Ready Mix has the ability to produce some of the most technical and advanced concrete in the marketplace.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Paul Piekarski, Sales Rep. Sika Corporation</div>
+        </div>
+
+        <span id="t-pager"></span>
+      </div>
+    </div>
+    
+    <?php if (!isset($PageTitle)) { ?>
+    <div class="order-band">
+      <a href="contact.php">ORDER CONCRETE</a>
+    </div>
+    <?php } ?>
+
+    <div id="footer-images" class="cf">
+      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
+      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer2.jpg);"></div>
+      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer3.jpg);"></div>
+    </div>
+
+    <div id="prefooter">
+      <img src="images/apple-touch-icon.png" alt="">
+
+      <ul id="footer-menu">
+        <li><a href="products-and-services.php">Products &amp; Services</a></li>
+        <li><a href="company.php">Company</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="contact.php">Order Concrete</a></li>
+      </ul>
+    </div>
+
+    <div id="footer">
+      <div class="site-width">
+        2761 South Chase Ave <span>&bull;</span> 12005 West Hampton Ave <span>&bull;</span> (414) 455-6070
+
+        <div id="copyright">&copy; <?php echo date("Y"); ?> Riv/Crete</div>
+      </div>
+    </div>
+  </body>
+</html>
