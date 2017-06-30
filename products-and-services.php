@@ -8,8 +8,6 @@ include "header.php";
     <div class="text">
       <h1>Riv/Crete delivers concrete at the highest levels of quality and standards.</h1>
 
-      <!-- Our professional dispatch team pairded with state-of-the-art tracking equipment, ensure Riv/Crete's reputation as the market leader in Milwaukee concrete delivery service. Our dispatch will work with you to place your order for the proper concrete mix and set up a time, date and location for your pour. Please make your call two to three days ahead of need so we can insure prompt service. -->
-
       <h2>PRODUCTS &amp; SERVICES</h2>
     </div>
 
@@ -18,7 +16,70 @@ include "header.php";
 </div>
 
 <div class="site-width products">
-  TWO COLUMN PRODUCTS CONTENT
+  <h3>CONCRETE PRODUCTS</h3>
+  <div class="left">
+    <ul class="slash double-space">
+      <li>Bagged goods (cement, mortar mixes, patching and restoration materials)</li>
+
+      <li>Concrete and masonry tools</li>
+
+      <li>Expansion materials</li>
+
+      <li>Concrete and masonry reinforcement</li>
+
+      <li>Concrete and masonry curing compounds and sealers</li>
+
+      <li>Poly sheeting</li>
+
+      <li>Decorative products for coloring and texturing concrete, including coloring agents and hardeners, colored toppings, stains, curing and sealing agents, coating and caulking materials, and exposed aggregate, stamping, and mat texturing tools.</li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <h4>CONCRETE SUPPLIER DISPATCH</h4>
+    <ul class="slash">
+      <li>40 front discharge ready mix concrete trucks</li>
+      <li>Wet or dry batch capable for concrete pick-up</li>
+    </ul>
+    <br>
+
+    <h4>CONCRETE CONSTRUCTION SUPPLY</h4>
+    <ul class="slash">
+      <li>Concrete sealers</li>
+      <li>Concrete coloring and staining products</li>
+      <li>Grouts and bag cements</li>
+      <li>Decorative stamps and stamping tools (rentals available)</li>
+    </ul>
+    <br>
+
+    <h4>TECHNICAL SERVICES</h4>
+    <ul class="slash">
+      <li>Concrete mix design for any application and able to meet any specification</li>
+    </ul>
+  </div>
+
+  <div style="clear: both;"></div>
+  
+  <h3>DECORATIVE PRODUCTS</h3>
+  <div class="left">
+    Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to compliment projects.<br>
+    <br>
+
+    Skilled contractors are revolutionizing the way concrete is being perceived by pushing the limits of this flexible building product.
+    Riv/Crete carries decorative products for coloring and texturing concrete, including coloring agents and hardeners, colored toppings, stains, curing and sealing agents, coating and caulking materials, and exposed aggregate, stamping, and mat texturing tools.<br>
+    <br>
+    <br>
+
+    <h4>DECORATIVE CONCRETE STAMPS</h4>
+    Stamp and Skin rentals are available, please call call us for more information or to schedule a rental: (414) 455-6070
+  </div>
+
+  <div class="right shift">
+    <img src="images/products.jpg" alt=""><br>
+    <br>
+
+    <a href="#" class="button">VIEW SKINS &amp; PATTERNS</a>
+  </div>
 </div>
 
 <div class="order-band">
