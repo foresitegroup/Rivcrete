@@ -1170,12 +1170,12 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #show-menu:checked + #menu-toggle + #menu {
     display: block;
     top: 100%;
-    left: 50%;
+    left: 0;
     right: auto;
-    transform: translateX(-50%);
+    transform: none;
     width: 100%;
     padding-top: 0.7em;
-    background: #FDC116;
+    background: #000000;
     text-align: center;
     font-size: 6vw;
     line-height: 0.9em;
@@ -1193,14 +1193,18 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
     padding: 1em 0;
     font-weight: inherit;
     font-size: inherit;
-    color: #000000;
+    color: #FFFFFF;
   }
-
-  #menu LI A { color: #000000; }
-
+  
+  #header.sticky #menu LI A,
+  #menu LI A { color: #FFFFFF; }
+  
+  #header.sticky #menu LI A:before,
+  #header.sticky #menu LI A:after,
   #menu LI A:before,
-  #menu LI A:after { border-color: #000000; bottom: 0; }
-
+  #menu LI A:after { border-color: #FFFFFF; bottom: 0; }
+  
+  #header.sticky #menu LI A:after,
   #menu LI A:after { bottom: -1px; }
 
   .home-products .text { font-size: 40px; }
@@ -1349,6 +1353,9 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
 @media only screen and (max-width: 480px) {
   /* Phone */
+  #show-menu:checked + #menu-toggle + #menu { height: 100vh; }
+  #menu LI { padding: 1em 0; }
+
   #footer-menu LI { font-size: 18px; padding: 0 2em; }
   #footer-menu LI:nth-of-type(3) { margin-top: 1em; }
   #footer-menu LI:nth-of-type(3):before { content: "/"; }

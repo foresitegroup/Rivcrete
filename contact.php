@@ -33,7 +33,16 @@ include "header.php";
       <li>The date and time of delivery</li>
       <li>Payment terms</li>
     </ol>
-
+    
+    <script type="text/javascript" src="inc/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".order .left .button").click(function(e) {
+          $.scrollTo("#contact",{ duration: 500 });
+          e.preventDefault();
+        });
+      });
+    </script>
     <a href="#" class="button">NEED MORE INFORMATION?</a>
   </div>
 
