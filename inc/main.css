@@ -210,7 +210,7 @@ UL.double-space LI { padding-bottom: 1em; }
 
 #show-menu, #menu-toggle { display: none; }
 
-#menu {
+#menu UL {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -225,14 +225,14 @@ UL.double-space LI { padding-bottom: 1em; }
   text-transform: uppercase;
 }
 
-#header.sticky #menu { right: 7%; font-size: 16px; line-height: 1em; }
+#header.sticky #menu UL { right: 7%; font-size: 16px; line-height: 1em; }
 
-#menu LI {
+#menu UL LI {
   display: inline-block;
   padding-right: 5.5vw;
 }
 
-#menu LI.phone {
+#menu UL LI.phone {
   margin-left: 2vw;
   border: 6px solid #FFFFFF;
   padding: 0.7em 1em;
@@ -243,7 +243,7 @@ UL.double-space LI { padding-bottom: 1em; }
   color: #FFFFFF;
 }
 
-#header.sticky #menu LI.phone {
+#header.sticky #menu UL LI.phone {
   margin-left: 0;
   border: 0;
   padding: 0;
@@ -252,17 +252,17 @@ UL.double-space LI { padding-bottom: 1em; }
   color: #000000;
 }
 
-#menu LI A {
+#menu UL LI A {
   color: #FDC116;
   position: relative;
 }
 
-#header.sticky #menu LI A {
+#header.sticky #menu UL LI A {
   color: #000000;
 }
 
-#menu LI A:before,
-#menu LI A:after {
+#menu UL LI A:before,
+#menu UL LI A:after {
   content: "";
   border-bottom: 1px solid #FDC116;
   position: absolute;
@@ -272,17 +272,17 @@ UL.double-space LI { padding-bottom: 1em; }
   transition: all 0.5s ease;
 }
 
-#header.sticky #menu LI A:before,
-#header.sticky #menu LI A:after { border-color: #000000; }
+#header.sticky #menu UL LI A:before,
+#header.sticky #menu UL LI A:after { border-color: #000000; }
 
-#menu LI A:after {
+#menu UL LI A:after {
   left: auto;
   right: 0;
   bottom: -6px;
 }
 
-#menu LI A:hover:before,
-#menu LI A:hover:after { width: 100%; }
+#menu UL LI A:hover:before,
+#menu UL LI A:hover:after { width: 100%; }
 
 #home-banner {
   max-height: 684px;
@@ -1036,10 +1036,10 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 }
 
 @media only screen and (max-width: 1300px) {
-  #menu LI { padding-right: 4vw; }
-  #header.sticky #menu LI { padding-right: 5.5vw; }
+  #menu UL LI { padding-right: 4vw; }
+  #header.sticky #menu UL LI { padding-right: 5.5vw; }
 
-  #menu LI.phone { margin-left: 0; }
+  #menu UL LI.phone { margin-left: 0; }
 
   #home-about .image { right: 2%; }
 }
@@ -1048,7 +1048,7 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   .site-width { width: 96%; }
 
   #logo { padding-left: 2%; }
-  #menu { right: 2%; }
+  #menu UL { right: 2%; }
 
   #home-about { font-size: 40px; }
   #home-about .site-width .text { width: 48%; }
@@ -1058,9 +1058,9 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 }
 
 @media only screen and (max-width: 1100px) {
-  #header.sticky #menu { right: 3.5%; }
+  #header.sticky #menu UL { right: 3.5%; }
 
-  #menu LI { padding-right: 2vw; }
+  #menu UL LI { padding-right: 2vw; }
 
   .home-products .text { right: 9%; }
 
@@ -1068,11 +1068,11 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 }
 
 @media only screen and (max-width: 1050px) {
-  #menu { font-size: 17px; line-height: 1em; }
-  #header.sticky #menu { right: 0; }
+  #menu UL { font-size: 17px; line-height: 1em; }
+  #header.sticky #menu UL { right: 0; }
 
-  #menu LI { padding-right: 1.7vw; }
-  #menu LI.phone { font-size: 14px; line-height: 1em; }
+  #menu UL LI { padding-right: 1.7vw; }
+  #menu UL LI.phone { font-size: 14px; line-height: 1em; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1080,10 +1080,10 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
   #logo IMG { height: 50px; }
   
-  #menu { font-size: 16px; line-height: 1em; }
+  #menu UL { font-size: 16px; line-height: 1em; }
   
-  #menu LI { padding-right: 3vw; }
-  #header.sticky #menu LI { padding-right: 4vw; }
+  #menu UL LI { padding-right: 3vw; }
+  #header.sticky #menu UL LI { padding-right: 4vw; }
 
   #home-banner .site-width { font-size: 1.5vw; }
   #home-banner .site-width .left { width: 61vw; }
@@ -1113,12 +1113,12 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #logo:after { width: 20px; }
   #logo IMG { height: 41px; }
 
-  #header.sticky #menu { right: 2%; }
+  #header.sticky #menu UL { right: 2%; }
   
-  #header.sticky #menu LI,
-  #menu LI { padding-right: 2vw; }
+  #header.sticky #menu UL LI,
+  #menu UL LI { padding-right: 2vw; }
 
-  #menu LI.phone { border-width: 4px; font-size: 13px; line-height: 1em; }
+  #menu UL LI.phone { border-width: 4px; font-size: 13px; line-height: 1em; }
   
   #home-about { font-size: 4.2vw; }
   #home-about .image { top: 0; }
@@ -1169,25 +1169,29 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
   #show-menu:checked + #menu-toggle + #menu {
     display: block;
+    position: absolute;
     top: 100%;
     left: 0;
-    right: auto;
-    transform: none;
     width: 100%;
-    padding-top: 0.7em;
     background: #000000;
+  }
+
+  #menu UL {
+    position: static;
+    transform: none;
     text-align: center;
     font-size: 6vw;
     line-height: 0.9em;
+    padding-top: 0.7em;
   }
 
-  #menu LI {
+  #menu UL LI {
     display: block;
     padding: 0.4em 0;
   }
 
-  #menu LI.phone,
-  #header.sticky #menu LI.phone {
+  #menu UL LI.phone,
+  #header.sticky #menu UL LI.phone {
     margin-left: 0;
     border: 0;
     padding: 1em 0;
@@ -1196,16 +1200,16 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
     color: #FFFFFF;
   }
   
-  #header.sticky #menu LI A,
-  #menu LI A { color: #FFFFFF; }
+  #header.sticky #menu UL LI A,
+  #menu UL LI A { color: #FFFFFF; }
   
-  #header.sticky #menu LI A:before,
-  #header.sticky #menu LI A:after,
-  #menu LI A:before,
-  #menu LI A:after { border-color: #FFFFFF; bottom: 0; }
+  #header.sticky #menu UL LI A:before,
+  #header.sticky #menu UL LI A:after,
+  #menu UL LI A:before,
+  #menu UL LI A:after { border-color: #FFFFFF; bottom: 0; }
   
-  #header.sticky #menu LI A:after,
-  #menu LI A:after { bottom: -1px; }
+  #header.sticky #menu UL LI A:after,
+  #menu UL LI A:after { bottom: -1px; }
 
   .home-products .text { font-size: 40px; }
 
@@ -1237,9 +1241,10 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
 @media only screen and (max-width: 600px) {
   /* Small tablet */
-  #home-banner .site-width { font-size: 2vw; }
+  #home-banner:before { padding-top: 75%; }
+  #home-banner .site-width { font-size: 2.5vw; }
   #home-banner .site-width .left { width: 100%; }
-  #home-banner H1 { font-size: 350%; }
+  #home-banner H1 { font-size: 460%; }
 
   #home-about { font-size: 40px; padding-bottom: 68vw; }
   #home-about .site-width .text { width: 100%; }
@@ -1353,8 +1358,23 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
 @media only screen and (max-width: 480px) {
   /* Phone */
-  #show-menu:checked + #menu-toggle + #menu { height: 100vh; }
-  #menu LI { padding: 1em 0; }
+  #show-menu:checked + #menu-toggle + #menu {
+    top: 0;
+    height: 100vh;
+  }
+
+  #menu UL {
+    position: absolute;
+    right: auto;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  #menu UL LI { padding: 1em 0; }
+
+  #home-banner:before { padding-top: 100%; }
+  #home-banner .site-width { font-size: 4vw; }
+  #home-banner H1 { font-size: 285%; }
 
   #footer-menu LI { font-size: 18px; padding: 0 2em; }
   #footer-menu LI:nth-of-type(3) { margin-top: 1em; }

@@ -49,11 +49,13 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
 
         <input type="checkbox" id="show-menu" role="button">
         <label for="show-menu" id="menu-toggle"></label>
-        <ul id="menu">
-          <li><a href="products-and-services.php">Products &amp; Services</a></li>
-          <li><a href="company.php">Company</a></li>
-          <li><a href="contact.php">Contact</a></li>
-          <li class="phone">(414) 455-6070</li>
-        </ul>
+        <div id="menu">
+          <ul>
+            <li><a href="products-and-services.php">Products &amp; Services</a></li>
+            <li><a href="company.php">Company</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li class="phone">(414) 455-6070</li>
+          </ul>
+        </div>
       </div>
     </div>
