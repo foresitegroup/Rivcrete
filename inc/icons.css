@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Rivcrete';
-  src:  url('fonts/Rivcrete.eot?ormqaw');
-  src:  url('fonts/Rivcrete.eot?ormqaw#iefix') format('embedded-opentype'),
-    url('fonts/Rivcrete.ttf?ormqaw') format('truetype'),
-    url('fonts/Rivcrete.woff?ormqaw') format('woff'),
-    url('fonts/Rivcrete.svg?ormqaw#Rivcrete') format('svg');
+  src:  url('fonts/Rivcrete.eot?974d7h');
+  src:  url('fonts/Rivcrete.eot?974d7h#iefix') format('embedded-opentype'),
+    url('fonts/Rivcrete.ttf?974d7h') format('truetype'),
+    url('fonts/Rivcrete.woff?974d7h') format('woff'),
+    url('fonts/Rivcrete.svg?974d7h#Rivcrete') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,4 +47,7 @@
 }
 .fg-chevron-right:before {
   content: "\e913";
+}
+.fg-file:before {
+  content: "\e914";
 }

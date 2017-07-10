@@ -697,6 +697,8 @@ UL.double-space LI { padding-bottom: 1em; }
   font: normal 42px/1.15em 'Squada One', cursive;
 }
 
+.page-header.decorative-header H1 { font-size: 54px; letter-spacing: 0.05em; }
+
 .page-header H2 {
   margin: 4em 0 0;
   font-weight: 900;
@@ -714,6 +716,16 @@ UL.double-space LI { padding-bottom: 1em; }
   position: relative;
   top: 2px;
 }
+
+.page-header.decorative-header H2 { font-weight: 800; font-size: 16px; letter-spacing: 0.05em; }
+.page-header.decorative-header H2:after { content: ""; }
+
+.page-header H3 {
+  margin: 0.7em 0 0;
+  font: 800 30px/1em 'Proxima Nova', cursive;
+  letter-spacing: 0.05em;
+}
+.page-header H3 A { color: #000000; }
 
 .page-header .image {
   position: absolute;
@@ -735,6 +747,38 @@ UL.double-space LI { padding-bottom: 1em; }
   width: 69%;
   height: 30px;
   background: #000000;
+}
+
+.page-header.decorative-header .image {
+  height: auto;
+  background-position: top center;
+  background-size: contain;
+  font-weight: 900;
+  font-weight: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+.page-header.decorative-header .image:before { display: none; }
+
+.page-header.decorative-header .image DIV { margin-top: 50%; }
+
+.page-header.decorative-header .image .fg { font-size: 80%; }
+.page-header.decorative-header .image .fg-chevron-right {
+  transform: rotate(90deg);
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+.page-header.decorative-header .image A:link,
+.page-header.decorative-header .image A:visited {
+  color: #000000;
+}
+
+.page-header.decorative-header .image A:hover,
+.page-header.decorative-header .image A:active {
+  color: #FFFFFF;
 }
 
 .products {
@@ -1023,6 +1067,24 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   margin-bottom: 2em;
 }
 
+.decorative {
+  padding: 3em 0 0;
+  font: normal 40px/1em 'Squada One', cursive;
+}
+
+.decorative > DIV {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  margin-bottom: 3em;
+}
+
+.decorative > DIV IMG {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
 
 @media only screen and (min-width: 2000px) {
   #home-banner .site-width { font-size: 22px; }
@@ -1127,6 +1189,9 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #footer-menu LI { padding: 0 1.5em; }
 
   .company .right { width: 35%; margin-right: 0; }
+
+  .decorative > DIV { width: 45%; margin-right: 8%; }
+  .decorative > DIV:nth-of-type(even) { margin-right: 0; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1217,7 +1282,17 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   .home-products .text A:visited { margin-top: 2em; font-size: 13px; }
 
   #footer-menu LI { padding: 0 1em; }
-  
+
+  .page-header.decorative-header .site-width { min-height: 0; }
+  .page-header.decorative-header .text { width: 100%; }
+
+  .page-header.decorative-header .image {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+  }
+
   .order H2 { font-size: 4.4vw; }
   .order H3 { font-size: 6vw; }
 
@@ -1294,6 +1369,8 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
     padding-top: 62%;
   }
 
+  .page-header.decorative-header .image:after { padding-top: 0; }
+
   .products .left,
   .products .right {
     float: none;
@@ -1354,6 +1431,8 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   }
 
   .radio { text-align: center; padding-left: 0; }
+
+  .decorative > DIV { width: 100%; margin-right: 0; }
 }
 
 @media only screen and (max-width: 480px) {

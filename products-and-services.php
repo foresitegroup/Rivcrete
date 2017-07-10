@@ -78,7 +78,7 @@ include "header.php";
     <img src="images/products.jpg" alt=""><br>
     <br>
 
-    <a href="#" class="button">VIEW SKINS &amp; PATTERNS</a>
+    <a href="decorative-products.php" class="button">VIEW SKINS &amp; PATTERNS</a>
   </div>
 </div>
 
