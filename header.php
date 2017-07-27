@@ -52,6 +52,7 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
         <div id="menu">
           <ul>
             <li><a href="products-and-services.php">Products &amp; Services</a></li>
+            <li><a href="decorative-products.php">Decorative</a></li>
             <li><a href="company.php">Company</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li class="phone">(414) 455-6070</li>

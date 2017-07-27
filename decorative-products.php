@@ -8,7 +8,7 @@ include "header.php";
     <div class="text">
       <h1>DECORATIVE PRODUCTS</h1>
 
-      Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to compliment projects.<br>
+      Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to complement projects.<br>
       <br>
 
       Skilled contractors are revolutionizing the way concrete is being perceived by pushing the limits of this flexible building product. Riv/Crete carries decorative products for coloring and texturing concrete, including coloring agents and hardeners, colored toppings, stains, curing and sealing agents, coating and caulking materials, and exposed aggregate, stamping, and mat texturing tools.

@@ -8,7 +8,7 @@ include "header.php";
     <div class="text">
       <h1>Place your Order with Riv/Crete</h1>
 
-      Our professional dispatch team pairded with state-of-the-art tracking equipment, ensure Riv/Crete's reputation as the market leader in Milwaukee concrete delivery service. Our dispatch will work with you to place your order for the proper concrete mix and set up a time, date and location for your pour. Please make your call two to three days ahead of need so we can insure prompt service.
+      Our professional dispatch team paired with state-of-the-art tracking equipment ensure Riv/Crete's reputation as the market leader in Milwaukee concrete delivery service. Our dispatch will work with you to place your order for the proper concrete mix and set up a time, date and location for your pour. Please make your call two to three days ahead of need so we can insure prompt service.
 
       <h2>ORDER CONCRETE</h2>
     </div>

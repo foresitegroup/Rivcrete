@@ -14,11 +14,10 @@ if ($_POST['confirmationCAP'] == "") {
   {
     // Send email
     $Subject = "Contact From Website";
-    // $SendTo = "info@rivcrete.com";
-    $SendTo = "lippert@gmail.com";
+    $SendTo = "nrivecca@rivcrete.com";
     $Headers = "From: Contact Form <contactform@rivcrete.com>\r\n";
     $Headers .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-    // $Headers .= "Bcc: mark@foresitegrp.com\r\n";
+    $Headers .= "Bcc: mark@foresitegrp.com\r\n";
 
     $Message = $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
     if ($_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "")

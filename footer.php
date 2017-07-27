@@ -1,5 +1,5 @@
     <div id="testimonials">
-      <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-auto-height="container" data-cycle-timeout="6000" data-cycle-pager="#t-pager" data-cycle-pager-template="<a href=#></a>">
+      <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-auto-height="container" data-cycle-timeout="7000" data-cycle-speed="1000" data-cycle-pager="#t-pager" data-cycle-pager-template="<a href=#></a>">
         <div>
           &ldquo;A company that knows its customers as well as it knows the products that it sells.&rdquo;
           <div class="attr"><span class="yellowtext">/</span> Gary Wallis, St. Mary's Cement</div>

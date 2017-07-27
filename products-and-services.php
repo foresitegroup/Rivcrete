@@ -62,7 +62,7 @@ include "header.php";
   
   <h3>DECORATIVE PRODUCTS</h3>
   <div class="left">
-    Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to compliment projects.<br>
+    Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to complement projects.<br>
     <br>
 
     Skilled contractors are revolutionizing the way concrete is being perceived by pushing the limits of this flexible building product.
