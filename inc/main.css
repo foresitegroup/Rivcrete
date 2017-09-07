@@ -754,7 +754,7 @@ UL.double-space LI { padding-bottom: 1em; }
   background-position: top center;
   background-size: contain;
   font-weight: 900;
-  font-weight: 18px;
+  font-size: 18px;
   line-height: 1.2em;
   letter-spacing: 0.2em;
 }
@@ -917,10 +917,10 @@ UL.double-space LI { padding-bottom: 1em; }
   margin-bottom: 1.2em;
 }
 
-.order INPUT::-webkit-input-placeholder { color: #FDC116; uppercase; opacity: 1; }
-.order INPUT:-moz-placeholder { color: #FDC116; uppercase; opacity: 1; } /* FF 4-18 */
-.order INPUT::-moz-placeholder { color: #FDC116; uppercase; opacity: 1; } /* FF 19+ */
-.order INPUT:-ms-input-placeholder { color: #FDC116; uppercase; opacity: 1; } /* IE 10+ */
+.order INPUT::-webkit-input-placeholder { color: #FDC116; opacity: 1; }
+.order INPUT:-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 4-18 */
+.order INPUT::-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 19+ */
+.order INPUT:-ms-input-placeholder { color: #FDC116; opacity: 1; } /* IE 10+ */
 
 .order INPUT[type="submit"] {
   margin-top: 1em;
@@ -970,7 +970,6 @@ TEXTAREA {
   font: 800 18px/1em 'Proxima Nova';
   -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
   -moz-appearance: none;
-  appearance: none;
   transition: all 0.2s;
   overflow: auto; /* Good ol' IE */
   margin-bottom: 2.68%;
@@ -981,10 +980,10 @@ TEXTAREA {
   height: 15.5em;
 }
 
-INPUT::-webkit-input-placeholder { color: #FFFFFF; uppercase; opacity: 1; }
-INPUT:-moz-placeholder { color: #FFFFFF; uppercase; opacity: 1; } /* FF 4-18 */
-INPUT::-moz-placeholder { color: #FFFFFF; uppercase; opacity: 1; } /* FF 19+ */
-INPUT:-ms-input-placeholder { color: #FFFFFF; uppercase; opacity: 1; } /* IE 10+ */
+INPUT::-webkit-input-placeholder { color: #FFFFFF; opacity: 1; }
+INPUT:-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 4-18 */
+INPUT::-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 19+ */
+INPUT:-ms-input-placeholder { color: #FFFFFF; opacity: 1; } /* IE 10+ */
 TEXTAREA::-webkit-input-placeholder { color: #FFFFFF; opacity: 1; }
 TEXTAREA:-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 4-18 */
 TEXTAREA::-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 19+ */
@@ -1012,7 +1011,6 @@ INPUT[type="submit"] {
   transition: all 0.2s;
   -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
   -moz-appearance: none;
-  appearance: none;
 }
 
 INPUT[type="submit"]:hover {
