@@ -32,6 +32,8 @@ include "header.php";
     RIV/CRETE SPECIALIZES IN:
 
     <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <img src="images/home-slider7.jpg" alt="">
+      <img src="images/home-slider6.jpg" alt="">
       <img src="images/home-slider1.jpg" alt="">
       <img src="images/home-slider2.jpg" alt="">
       <img src="images/home-slider3.jpg" alt="">

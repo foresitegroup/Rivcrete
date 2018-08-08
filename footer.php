@@ -1,6 +1,10 @@
     <div id="testimonials">
       <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-auto-height="container" data-cycle-timeout="7000" data-cycle-speed="1000" data-cycle-pager="#t-pager" data-cycle-pager-template="<a href=#></a>">
         <div>
+          &ldquo;The credit is due to the Riv-Crete team for supplying in spec material on a timely basis all night even as ice rates were modified throughout the pour to keep temps where they needed to be. WisDOT IA rep who was on site commented that he had seen less than a dozen deck pours of that size have in spec material the entire pour.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Philip Meinholz, P.E. Structural Engineer</div>
+        </div>
+        <div>
           &ldquo;A company that knows its customers as well as it knows the products that it sells.&rdquo;
           <div class="attr"><span class="yellowtext">/</span> Gary Wallis, St. Mary's Cement</div>
         </div>
@@ -16,7 +20,7 @@
         <span id="t-pager"></span>
       </div>
     </div>
-    
+
     <?php if (!isset($PageTitle)) { ?>
     <div class="order-band">
       <a href="contact.php">ORDER CONCRETE</a>
