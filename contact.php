@@ -143,7 +143,7 @@ unset($_SESSION['feedback']);
 
 <form action="form-contact.php" method="POST" id="contact">
   <div>
-    <h5>Questions or a Request? Fill out the form below or contact us directly at:<br><br>(414) 455-6070</h5>
+    <h5>Questions or a Request? Fill out the form below or contact us directly at:<br><br><?php email("contactus@rivcrete.com"); ?> or (414) 455-6070</h5>
 
     <input type="text" name="<?php echo md5("name" . $ip . $salt . $timestamp); ?>" id="name" placeholder="Name">
 
