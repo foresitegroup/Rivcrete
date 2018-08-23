@@ -14,7 +14,7 @@ if ($_POST['confirmationCAP'] == "") {
   {
     // Send email
     $Subject = "Contact From Website";
-    $SendTo = "nrivecca@rivcrete.com";
+    $SendTo = "contactus@rivcrete.com";
     $Headers = "From: Contact Form <contactform@rivcrete.com>\r\n";
     $Headers .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
     $Headers .= "Bcc: mark@foresitegrp.com\r\n";
