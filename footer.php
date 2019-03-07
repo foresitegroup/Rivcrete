@@ -46,7 +46,7 @@
 
     <div id="footer">
       <div class="site-width">
-        2761 South Chase Ave <span>&bull;</span> 12005 West Hampton Ave <span>&bull;</span> (414) 455-6070
+        2761 S Chase Ave <span>&bull;</span> 12005 W Hampton Ave <span>&bull;</span> 4350 S 13th St <span>&bull;</span> (414) 455-6070
 
         <div id="copyright">&copy; <?php echo date("Y"); ?> Riv/Crete</div>
       </div>
