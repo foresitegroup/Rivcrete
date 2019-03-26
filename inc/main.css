@@ -229,7 +229,7 @@ UL.double-space LI { padding-bottom: 1em; }
 
 #menu UL LI {
   display: inline-block;
-  padding-right: 3.8vw;
+  padding-right: 3.2vw;
   position: relative;
 }
 
@@ -285,17 +285,9 @@ UL.double-space LI { padding-bottom: 1em; }
 #menu UL LI A:hover:after { width: 100%; }
 
 #home-banner {
-  max-height: 684px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 684px;
   position: relative;
-}
-
-#home-banner:before {
-  content: "";
-  display: block;
-  padding-top: 47.5%;
+  overflow: hidden;
 }
 
 #home-banner:after {
@@ -305,7 +297,22 @@ UL.double-space LI { padding-bottom: 1em; }
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45);
+  background: url(../images/home-banner-grid.png);
+}
+
+#home-banner VIDEO {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home-banner .site-width {
@@ -320,6 +327,7 @@ UL.double-space LI { padding-bottom: 1em; }
   line-height: 1em;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #home-banner .site-width .left {
@@ -327,7 +335,12 @@ UL.double-space LI { padding-bottom: 1em; }
   width: 48vw;
 }
 
-#home-banner H1 {
+#home-banner #logo-round {
+  width: 300px;
+  height: auto;
+}
+
+#home-banner H1, #home-banner H2 {
   margin: 0 0 0.4em;
   color: #FFFFFF;
   font-family: 'Squada One', cursive;
@@ -337,10 +350,17 @@ UL.double-space LI { padding-bottom: 1em; }
   letter-spacing: 0.03em;
 }
 
+#home-banner H2 {
+  margin: 0.5em 0 2em;
+  font-size: 165%;
+  line-height: 1em;
+}
+
+#home-banner H2 SPAN { color: #FDC116; }
+
 #home-banner A:link,
 #home-banner A:visited {
   display: inline-block;
-  margin-top: 5em;
   border: 7px solid #FDC116;
   padding: 0.8em 1.3em 0.8em 1.45em;
   background: #000000;
@@ -688,9 +708,10 @@ UL.double-space LI { padding-bottom: 1em; }
   justify-content: center;
 }
 
-.page-header .text {
-  width: 44%;
-}
+.page-header.noimage .site-width { min-height: 0; }
+
+.page-header .text { width: 44%; }
+.page-header.noimage .text { width: 100%; }
 
 .page-header H1 {
   margin: 0 0 0.25em;
@@ -706,6 +727,8 @@ UL.double-space LI { padding-bottom: 1em; }
   line-height: 1em;
   letter-spacing: 0.3em;
 }
+
+.page-header.noimage H2 { margin: 2em 0 0; }
 
 .page-header H2:after {
   font-family: "Rivcrete";
@@ -738,6 +761,11 @@ UL.double-space LI { padding-bottom: 1em; }
   background-size: cover;
 }
 
+.page-header.noimage .image {
+  width: 85%;
+  height: calc(100% + 30px);
+}
+
 .page-header .image:before {
   content: "";
   position: absolute;
@@ -747,6 +775,12 @@ UL.double-space LI { padding-bottom: 1em; }
   width: 69%;
   height: 30px;
   background: #000000;
+}
+
+.page-header.noimage .image:before {
+  z-index: 1;
+  bottom: 15px;
+  width: 100%;
 }
 
 .page-header.decorative-header .image {
@@ -1083,18 +1117,190 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   margin-top: 1em;
 }
 
+.portfolios { counter-reset: port-count; padding-bottom: 6em; }
 
-@media only screen and (min-width: 2000px) {
+.portfolio {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background: url(../images/divider.png) repeat-x;
+}
+
+.portfolio:nth-child(even) { justify-content: flex-start; }
+
+.portfolio .port-title {
+  position: absolute;
+  z-index: 200;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #FDC116, #FDC116 51%, transparent 51%);
+  padding: 25px 0 40px;
+}
+
+.portfolio:nth-child(even) .port-title {
+  background: linear-gradient(to left, #FDC116, #FDC116 51%, transparent 51%);
+}
+
+.portfolio .port-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  height: 36px;
+  width: 45%;
+  background: #000000;
+}
+
+.portfolio:nth-child(even) .port-title:after { left: 55%; }
+
+.portfolio .port-title H3 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  left: calc((100% - 1200px) / 2);
+  font-size: 54px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.portfolio:nth-child(even) .port-title H3,
+.portfolio:nth-child(even) .port-title H4 {
+  left: calc((100% + 1200px) / 2);
+  transform: translateX(-100%);
+}
+
+.portfolio .port-title H4 {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+  left: calc((100% - 1200px) / 2);
+  bottom: -0.6em;
+  color: #FDC116;
+  font-size: 12px;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.portfolio .port-title H4:before { content: "/ / / "; letter-spacing: 0.1em; }
+.portfolio:nth-child(even) .port-title H4:before { content: ""; }
+.portfolio:nth-child(even) .port-title H4:after { content: " / / /"; letter-spacing: 0.1em; }
+
+.portfolio .port-text {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+}
+
+.portfolio .port-text:before {
+  counter-increment: port-count;
+  content: "#" counter(port-count);
+  display: block;
+  color: rgba(0,0,0,0.15);
+  font-weight: 900;
+  font-size: 142px;
+  line-height: 1em;
+  color: rgba(0,0,0,0.15);
+  padding-bottom: 1.2em;
+}
+
+.portfolio:nth-child(even) .port-text {
+  text-align: right;
+}
+
+.portfolio .port-text .text {
+  border-left: 10px solid #000000;
+  font-size: 18px;
+  line-height: 1.4em;
+  box-sizing: border-box;
+  padding: 0 60% 0 18px;
+}
+
+.portfolio:nth-child(even) .port-text .text {
+  border-left: 0;
+  border-right: 10px solid #000000;
+  padding: 0 18px 0 60%;
+}
+
+.portfolio .port-image {
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
+  width: 52.5vw;
+  height: calc(52.5vw * 0.6693);
+  margin: 95px 0 45px;
+}
+
+.portfolio:nth-child(even) .port-image { text-align: right; }
+
+.portfolio .port-image .cycle-slide {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio .port-image .cycle-pager {
+  display: inline-block;
+  margin: 0 0 0 5%;
+  width: 82%;
+  background: #000000;
+  box-sizing: border-box;
+  padding: 17px 37px;
+  text-align: right;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.portfolio:nth-child(even) .port-image .cycle-pager {
+  margin: 0 5% 0 0;
+  text-align: left;
+}
+
+.portfolio .port-image .cycle-pager A:link {
+  margin: 0 6px;
+  color: #FFFFFF;
+}
+
+.portfolio .port-image .cycle-pager A:hover,
+.portfolio .port-image .cycle-pager A.cycle-pager-active {
+  color: #FDC116;
+}
+
+@media only screen and (min-width: 3000px) {
+  #header.sticky {
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 37%, #FDC116 37%, #FDC116);
+  }
+}
+
+
+@media only screen and (min-width: 2000px) and (max-width: 2999px) {
+  #header.sticky {
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 30%, #FDC116 30%, #FDC116);
+  }
+
   #home-banner .site-width { font-size: 22px; }
   #home-banner .site-width .left { width: 72%; }
 }
 
 @media only screen and (min-width: 1600px) {
   #menu UL { font-size: 18px; }
+  #menu UL LI { padding-right: 50px; }
 
   #home-about { padding: 1.3em 0; font-size: 44px; }
   #home-about .site-width .text { width: 45%; }
   #home-about .image { width: 50%; }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1999px) {
+  #header.sticky {
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 20%, #FDC116 20%, #FDC116);
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1105,7 +1311,7 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #home-about .image { right: 2%; }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1215px) {
   .site-width { width: 96%; }
 
   #logo { padding-left: 2%; }
@@ -1116,6 +1322,17 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #home-about .image { right: 2%; width: 46%; }
 
   .home-products .text { transform: translateY(-50%); }
+  
+  .portfolio .port-title H3, .portfolio .port-title H4 { left: 2%; }
+  .portfolio:nth-child(even) .port-title H3, .portfolio:nth-child(even) .port-title H4 { left: 98%; }
+  .portfolio .port-title H4 { font-size: 0.98vw; }
+
+  .portfolio .port-text { width: 96%; }
+
+  .portfolio .port-text:before { padding-bottom: 14vw; }
+
+  .portfolio .port-text .text { font-size: 1.48vw; padding: 0 54vw 0 18px; }
+  .portfolio:nth-child(even) .port-text .text { padding: 0 18px 0 54vw; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1124,6 +1341,11 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   .home-products .text { right: 9%; }
 
   .company .right { width: 24%; }
+  
+  .portfolio .port-title { padding: 2.27vw 0 3.63vw; }
+  .portfolio .port-title H3 { font-size: 4.8vw; }
+
+  .portfolio .port-text:before { padding-bottom: 12vw; }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -1146,7 +1368,7 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #home-banner .site-width { font-size: 1.5vw; }
   #home-banner .site-width .left { width: 61vw; }
 
-  #home-banner A:link, #home-banner A:visited { margin-top: 2.5em; }
+  /*#home-banner A:link, #home-banner A:visited { margin-top: 2.5em; }*/
 
   #home-about { padding: 1.5em 0 1em; }
 
@@ -1278,6 +1500,9 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   #header.sticky #menu UL LI A:after,
   #menu UL LI A:after { bottom: -1px; }
 
+  #home-banner { height: 500px; }
+  #home-banner #logo-round { width: 250px; }
+
   .home-products .text { font-size: 40px; }
 
   .home-products .text A:link,
@@ -1303,6 +1528,63 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
   .order LABEL { font-size: 2.3vw; }
 
   #contact > DIV { width: 96%; }
+
+  .portfolio { flex-direction: column; }
+
+  .portfolio .port-title,
+  .portfolio:nth-child(even) .port-title {
+    position: relative;
+    top: 0;
+    margin-top: 7vw;
+    background: linear-gradient(to right, #FDC116, #FDC116 70%, transparent 70%);
+  }
+
+  .portfolio .port-title:after { width: 66%; }
+  .portfolio:nth-child(even) .port-title:after { left: 0; }
+
+  .portfolio .port-title H3 { font-size: 6.5vw; }
+  .portfolio .port-title H4 { font-size: 1.35vw; }
+
+  .portfolio:nth-child(even) .port-title H3,
+  .portfolio:nth-child(even) .port-title H4 {
+    left: 2%;
+    transform: none;
+  }
+
+  .portfolio .port-text {
+    position: relative;
+    top: 0;
+    margin-top: 4.4vw;
+  }
+
+  .portfolio .port-text:before {
+    position: absolute;
+    top: -17vw;
+    right: 0;
+    padding-bottom: 0;
+  }
+
+  .portfolio .port-text .text,
+  .portfolio:nth-child(even) .port-text .text {
+    border-left: 10px solid #000000;
+    border-right: 0;
+    padding: 0 0 0 18px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .portfolio .port-image {
+    width: 96%;
+    height: calc(96vw * 0.6693);
+    margin: 30px auto 40px;
+  }
+
+  .portfolio:nth-child(even) .port-image { text-align: left; }
+
+  .portfolio:nth-child(even) .port-image .cycle-pager {
+    margin: 0 0 0 5%;
+    text-align: right;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1318,7 +1600,7 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
 @media only screen and (max-width: 600px) {
   /* Small tablet */
-  #home-banner:before { padding-top: 75%; }
+  /*#home-banner:before { padding-top: 75%; }*/
   #home-banner .site-width { font-size: 2.5vw; }
   #home-banner .site-width .left { width: 100%; }
   #home-banner H1 { font-size: 460%; }
@@ -1365,11 +1647,19 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
     height: auto;
   }
 
+  .page-header.noimage .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .page-header .image:after {
     content: "";
     display: block;
     padding-top: 62%;
   }
+
+  .page-header.noimage .image:after { padding-top: 0; }
 
   .page-header.decorative-header .image:after { padding-top: 0; }
 
@@ -1453,7 +1743,7 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
   #menu UL LI { padding: 1em 0; }
 
-  #home-banner:before { padding-top: 100%; }
+  /*#home-banner:before { padding-top: 100%; }*/
   #home-banner .site-width { font-size: 4vw; }
   #home-banner H1 { font-size: 285%; }
 
@@ -1475,6 +1765,22 @@ INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
 
   .radio SPAN { display: block; }
   .radio LABEL:first-of-type { margin-left: 0; }
+
+  .portfolio .port-title,
+  .portfolio:nth-child(even) .port-title {
+    margin-top: 13vw;
+    background: linear-gradient(to right, #FDC116, #FDC116 82%, transparent 82%);
+    padding: 3vw 0 5.4vw;
+  }
+
+  .portfolio .port-title:after { width: 78%; }
+
+  .portfolio .port-title H3 { font-size: 7.8vw; }
+  .portfolio .port-title H4 { font-size: 1.7vw; }
+
+  .portfolio .port-text { margin-top: 10vw; }
+
+  .portfolio .port-text:before { font-size: 70px; top: -20vw; }
 }
 
 @media only screen and (max-width: 320px) {
