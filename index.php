@@ -3,15 +3,17 @@ $FooterImage = "home-";
 include "header.php";
 ?>
 
-<div id="home-banner" style="background-image: url(images/banner-home.jpg);">
+<div id="home-banner">
+  <video playsinline autoplay muted loop poster="images/home-banner.jpg">
+    <source src="images/home-banner.mp4" type="video/mp4">
+  </video>
+
   <div class="site-width">
-    <div class="left">
-      <h1>Ready Mix Concrete Decorative Building Products</h1>
+    <img src="images/logo-round.png" alt="" id="logo-round">
 
-      / READY WHEN YOU ARE<br>
+    <h2>Ready Mix Concrete <span>+</span> Decorative Building Products</h2>
 
-      <a href="contact.php">ORDER CONCRETE</a>
-    </div>
+    <a href="contact.php">ORDER CONCRETE</a>
   </div>
 </div>
 
