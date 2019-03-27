@@ -1054,7 +1054,7 @@ INPUT[type="submit"]:hover {
 
 .radio { text-align: left; padding: 1em 0 2.5em 5%; }
 
-.radio LABEL {
+.radio LABEL, LABEL[for="send-updates"] {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -1062,7 +1062,7 @@ INPUT[type="submit"]:hover {
   margin-left: 1em;
 }
 
-.radio LABEL:after {
+.radio LABEL:after, LABEL[for="send-updates"]:before {
   content: "";
   display: inline-block;
   width: 0.9em;
@@ -1073,11 +1073,13 @@ INPUT[type="submit"]:hover {
   transform: translateY(-50%);
   box-shadow: inset 0 0 0 5px #000000;
   border-radius: 50%;
+  background: #000000;
 }
 
-INPUT[type="radio"] { display: none; }
+INPUT[type="radio"], INPUT[type="checkbox"] { display: none; }
 
-INPUT[type="radio"]:checked + LABEL:after { background: #000000; }
+INPUT[type="radio"]:checked + LABEL:after,
+INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: #FDC116; }
 
 #contact #name,
 #contact #email {

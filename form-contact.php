@@ -12,6 +12,57 @@ if ($_POST['confirmationCAP'] == "") {
       $_POST[md5('message' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
      )
   {
+    // Add info to MailChimp
+    if (isset($_POST['sendupdates'])) {
+      include_once "inc/fintoozler.php";
+
+      $name = explode(" ", $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])], 2);
+
+      $phone = ($_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "") ? $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] : "";
+
+      $mcdata = array(
+        'email'  => $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])],
+        'status' => 'subscribed',
+        'firstname' => $name[0],
+        'lastname' => $name[1],
+        'phone' => $phone
+      );
+
+      function syncMailchimp($mcdata) {
+       $memberId = md5(strtolower($mcdata['email']));
+        $dataCenter = substr(MAILCHIMP_API,strpos(MAILCHIMP_API,'-')+1);
+        $url = 'https://' . $dataCenter . '.api.mailchimp.com/3.0/lists/' . MAILCHIMP_LIST_ID . '/members/' . $memberId;
+
+        $json = json_encode(array(
+          'email_address' => $mcdata['email'],
+          'status'        => $mcdata['status'],
+          'merge_fields'  => [
+            'FNAME' => $mcdata['firstname'],
+            'LNAME' => $mcdata['lastname'],
+            'PHONE' => $mcdata['phone']
+          ]
+        ));
+
+        $ch = curl_init($url);
+
+        curl_setopt($ch, CURLOPT_USERPWD, 'user:' . MAILCHIMP_API);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+
+        $result = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        return $httpCode;
+      }
+
+      syncMailchimp($mcdata);
+    }
+
     // Send email
     $Subject = "Contact From Website";
     $SendTo = "contactus@rivcrete.com";

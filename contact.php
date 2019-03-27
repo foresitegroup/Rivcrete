@@ -167,6 +167,9 @@ unset($_SESSION['feedback']);
 
     <textarea name="<?php echo md5("message" . $ip . $salt . $timestamp); ?>" id="message" placeholder="What can we help you with?"></textarea>
 
+    <input type="checkbox" name="sendupdates" value="Send updates" id="send-updates" checked>
+    <label for="send-updates">Subscribe to our quarterly newsletter.</label>
+
     <input type="hidden" name="referrer" value="contact.php">
 
     <input type="text" name="confirmationCAP" style="display: none;">
