@@ -38,7 +38,7 @@ include "header.php";
       <strong class="yellowtext">E:</strong> <?php email("nrivecca@rivcrete.com"); ?><br>
       <br>
 
-      <h5>Micheal Rivecca</h5>
+      <h5>Michael Rivecca</h5>
       <strong class="yellowtext">P:</strong> 414-455-6070<br>
       <strong class="yellowtext">E:</strong> <?php email("mrivecca@rivcrete.com"); ?><br>
     </div>
