@@ -336,7 +336,7 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 #home-banner #logo-round {
-  width: 300px;
+  width: 260px;
   height: auto;
 }
 
@@ -351,7 +351,7 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 #home-banner H2 {
-  margin: 0.5em 0 2em;
+  margin: 1.25em 0 2em;
   font-size: 165%;
   line-height: 1em;
 }
@@ -1503,7 +1503,7 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #menu UL LI A:after { bottom: -1px; }
 
   #home-banner { height: 500px; }
-  #home-banner #logo-round { width: 250px; }
+  #home-banner #logo-round { width: 210px; }
 
   .home-products .text { font-size: 40px; }
 
