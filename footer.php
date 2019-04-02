@@ -38,9 +38,9 @@
 
       <ul id="footer-menu">
         <li><a href="products-and-services.php">Products &amp; Services</a></li>
-        <li><a href="company.php">Company</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="contact.php">Order Concrete</a></li>
+        <li><a href="employment.php">Employment</a></li>
       </ul>
     </div>
 
