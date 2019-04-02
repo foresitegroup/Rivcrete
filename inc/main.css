@@ -1356,12 +1356,129 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   color: #FDC116;
 }
 
+.blog-index { width: 1100px; padding: 68px 0; }
+
+.blog-index .pagination {
+  text-align: right;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.blog-index .pagination SPAN, .blog-index .pagination A { margin-left: 0.3em; color: #FDC116; }
+
+.blog-index .pagination A:link, .blog-index .pagination A:visited { color: #000000; }
+.blog-index .pagination A:hover, .blog-index .pagination A:active { color: #FDC116; }
+
+.blog-index .blog-index-posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.blog-index .blog-index-posts .blog-index-post {
+  width: 30%;
+  margin: 26px 0;
+  background: #FDC116;
+  box-sizing: border-box;
+  padding: 32px 29px 105px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4em;
+  position: relative;
+}
+
+.blog-index .blog-index-posts .blog-index-post H3 {
+  margin: 0 0 0.5em;
+  font-size: 166.66%;
+  line-height: 1em;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.blog-index .blog-index-posts .blog-index-post H4 {
+  margin: 0 0 0.5em;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 77.77%;
+  line-height: 1em;
+}
+
+.blog-index .blog-index-posts .blog-index-post A:link,
+.blog-index .blog-index-posts .blog-index-post A:visited {
+  border-color: #000000;
+  padding: 0.6em 1.9em 0.5em 2em;
+  text-transform: uppercase;
+  font-size: 77.77%;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.blog-index .blog-index-posts .blog-index-post A:hover,
+.blog-index .blog-index-posts .blog-index-post A:active {
+  background: #000000;
+}
+
+.blog-single-header { padding: 2.8em 0; }
+
+.blog-single-title { margin: 0; line-height: 1em; text-transform: uppercase; }
+
+.blog-single-date { margin: 0 !important; color: #FFFFFF; }
+.blog-single-date:after { content: "" !important; }
+
+.blog-single-post {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5em 0;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.blog-single-sidebar { width: 36%; }
+
+.blog-single-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 1.5em;
+}
+
+.blog-single-image:before {
+  display: block;
+  content: "";
+  padding-top: 68%;
+}
+
+.blog-single-sidebar H3 {
+  margin: 0 0 0.5em;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.blog-single-sidebar A:link, .blog-single-sidebar A:visited {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  color: #FDC116;
+}
+
+.blog-single-sidebar A:hover, .blog-single-sidebar A:active {
+  color: #000000;
+}
+
+.blog-single-text { width: 60%; margin-left: auto; }
+
+.blog-single-text P { margin: 0 0 1.7em; }
+
+
 @media only screen and (min-width: 3000px) {
   #header.sticky {
     background-image: linear-gradient(to right, #FFFFFF, #FFFFFF 37%, #FDC116 37%, #FDC116);
   }
 }
-
 
 @media only screen and (min-width: 2000px) and (max-width: 2999px) {
   #header.sticky {
@@ -1498,6 +1615,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
   .decorative > DIV { width: 45%; margin-right: 8%; }
   .decorative > DIV:nth-of-type(even) { margin-right: 0; }
+
+  .blog-index .blog-index-posts .blog-index-post { width: 46.5%; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1817,6 +1936,11 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   .radio { text-align: center; padding-left: 0; }
 
   .decorative > DIV { width: 100%; margin-right: 0; }
+
+  .blog-index .blog-index-posts .blog-index-post { width: 100%; }
+
+  .blog-single-post { flex-direction: column-reverse; }
+  .blog-single-sidebar, .blog-single-text { width: 100%; }
 }
 
 @media only screen and (max-width: 480px) {

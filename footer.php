@@ -23,24 +23,24 @@
 
     <?php if (!isset($PageTitle)) { ?>
     <div class="order-band">
-      <a href="contact.php">ORDER CONCRETE</a>
+      <a href="<?php echo $TopDir; ?>contact.php">ORDER CONCRETE</a>
     </div>
     <?php } ?>
 
     <div id="footer-images" class="cf">
-      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
-      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer2.jpg);"></div>
-      <div style="background-image: url(images/<?php echo $FooterImage; ?>footer3.jpg);"></div>
+      <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
+      <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer2.jpg);"></div>
+      <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer3.jpg);"></div>
     </div>
 
     <div id="prefooter">
-      <img src="images/apple-touch-icon.png" alt="">
+      <img src="<?php echo $TopDir; ?>images/apple-touch-icon.png" alt="">
 
       <ul id="footer-menu">
-        <li><a href="products-and-services.php">Products &amp; Services</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="contact.php">Order Concrete</a></li>
-        <li><a href="employment.php">Employment</a></li>
+        <li><a href="<?php echo $TopDir; ?>products-and-services.php">Products &amp; Services</a></li>
+        <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
+        <li><a href="<?php echo $TopDir; ?>contact.php">Order Concrete</a></li>
+        <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
       </ul>
     </div>
 
@@ -51,5 +51,7 @@
         <div id="copyright">&copy; <?php echo date("Y"); ?> Riv/Crete</div>
       </div>
     </div>
+
+    <?php if ($TopDir != "") wp_footer(); ?>
   </body>
 </html>
