@@ -63,7 +63,7 @@ HR {
 }
 
 A:link, A:visited {
-  color: #0000FF;
+  color: #FDC116;
   text-decoration: none;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -71,7 +71,7 @@ A:link, A:visited {
 }
 
 A:hover, A:active {
-  color: #FF0000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -1471,7 +1471,9 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
 .blog-single-text { width: 60%; margin-left: auto; }
 
-.blog-single-text P { margin: 0 0 1.7em; }
+.blog-single-text P { margin: 0 0 1.5em; }
+
+.blog-single-text UL { margin: 0 0 0 0.7em; padding: 0 0 0 0.7em; transform: translateY(-1.5em); }
 
 
 @media only screen and (min-width: 3000px) {
