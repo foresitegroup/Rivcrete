@@ -9,9 +9,8 @@ include "header.php";
   </video>
 
   <div class="site-width">
-    <img src="images/logo-round.png" alt="" id="logo-round">
-
-    <h2>Ready Mix Concrete <span>+</span> Decorative Building Products</h2>
+    <img src="images/logo-round.png" alt="" id="logo-round"><br>
+    <br><br><br><br>
 
     <a href="contact.php">ORDER CONCRETE</a>
   </div>
@@ -31,8 +30,6 @@ include "header.php";
 
 <div class="site-width home-products">
   <div class="slides">
-    RIV/CRETE SPECIALIZES IN:
-
     <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
       <img src="images/home-slider7.jpg" alt="">
       <img src="images/home-slider6.jpg" alt="">
@@ -47,12 +44,25 @@ include "header.php";
   </div>
 
   <div class="text">
-    <span class="yellowtext">/</span> COMMERCIAL<br>
-    <span class="yellowtext">/</span> INDUSTRIAL<br>
-    <span class="yellowtext">/</span> PRIVATE<br>
-    <span class="yellowtext">/</span> RESIDENTIAL<br>
+    LATEST RIVCRETE NEWS
+    <?php
+    require('blog/wp-load.php');
+    query_posts('showposts=1');
+    while (have_posts()): the_post();
+    ?>
+    <div class="blog-index-post">
+      <?php
+      echo '<h4 class="blog-index-date">'.get_the_date('n/j/y', get_the_ID()).'</h4>';
+      the_title('<h3 class="blog-index-title">', '</h3>');
+      echo fg_excerpt(34);
+      echo '<a href="'.get_permalink().'" class="button">Read More</a>';
+      ?>
+    </div>
+    <?php endwhile; ?>
+    
+    <br><br>
 
-    <a href="products-and-services.php">PRODUCTS &amp; SERVICES</a>
+    <a href="blog" class="button">See All News Posts</a>
   </div>
 </div>
 
