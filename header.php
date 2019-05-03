@@ -55,10 +55,20 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
         <label for="show-menu" id="menu-toggle"></label>
         <div id="menu">
           <ul>
-            <li><a href="<?php echo $TopDir; ?>products-and-services.php">Products</a></li>
-            <li><a href="<?php echo $TopDir; ?>decorative-products.php">Decorative</a></li>
+            <li>
+              <a href="<?php echo $TopDir; ?>products-and-services.php">Products</a>
+              <ul>
+                <li><a href="<?php echo $TopDir; ?>decorative-products.php">Decorative</a></li>
+              </ul>
+            </li>
             <li><a href="<?php echo $TopDir; ?>portfolio.php">Portfolio</a></li>
-            <li><a href="<?php echo $TopDir; ?>company.php">Company</a></li>
+            <li>
+              <a href="<?php echo $TopDir; ?>company.php">Company</a>
+              <ul>
+                <li><a href="<?php echo $TopDir; ?>blog">News</a></li>
+                <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
+              </ul>
+            </li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
             <li class="phone">(414) 455-6070</li>
           </ul>
