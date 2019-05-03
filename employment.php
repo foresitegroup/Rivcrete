@@ -3,7 +3,7 @@ $PageTitle = "Employment";
 include "header.php";
 ?>
 
-<div class="page-header">
+<div class="page-header noimage">
   <div class="site-width">
     <div class="text">
       <h1>Riv/Crete Employment</h1>
@@ -11,7 +11,7 @@ include "header.php";
       <h2>OPEN POSITIONS</h2>
     </div>
 
-    <div class="image" style="background-image: url(images/header-employment.jpg);"></div>
+    <div class="image"></div>
   </div>
 </div>
 
