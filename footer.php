@@ -37,9 +37,10 @@
       <img src="<?php echo $TopDir; ?>images/apple-touch-icon.png" alt="">
 
       <ul id="footer-menu">
-        <li><a href="<?php echo $TopDir; ?>products-and-services.php">Products &amp; Services</a></li>
+        <li><a href="<?php echo $TopDir; ?>products-and-services.php">Products</a></li>
         <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
         <li><a href="<?php echo $TopDir; ?>contact.php">Order Concrete</a></li>
+        <li><a href="<?php echo $TopDir; ?>news">News</a></li>
         <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
       </ul>
     </div>
