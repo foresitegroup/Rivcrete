@@ -281,8 +281,22 @@ UL.double-space LI { padding-bottom: 1em; }
   bottom: -6px;
 }
 
+#menu UL > LI:hover > A:before,
+#menu UL > LI:hover > A:after,
 #menu UL LI A:hover:before,
 #menu UL LI A:hover:after { width: 100%; }
+
+#menu UL LI UL {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  transform: none;
+  padding-top: 12px;
+  white-space: nowrap;
+}
+
+#menu UL LI:hover UL { display: block; }
 
 #home-banner {
   height: 684px;
@@ -448,21 +462,18 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 .home-products {
-  padding: 90px 0 120px;
+  padding: 90px 0;
   position: relative;
 }
 
 .home-products .slides {
+  display: inline-block;
+  vertical-align: top;
   width: 48%;
-  text-align: center;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1em;
-  letter-spacing: 0.2em;
 }
 
 .home-products .cycle-slideshow {
-  margin-top: 4em;
+  margin-top: 3em;
   box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
 }
 
@@ -495,40 +506,72 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 .home-products .text {
-  position: absolute;
-  top: 50%;
-  right: 14%;
-  transform: translateY(-42%);
-  box-sizing: border-box;
-  font-family: 'Squada One', cursive;
-  font-weight: normal;
-  font-size: 52px;
-  line-height: 1.5em;
-  letter-spacing: 0.05em;
-}
-
-.home-products .text .yellowtext {
-  font-size: 73%;
-  line-height: 1em;
-  position: relative;
-  top: -0.07em;
-}
-
-.home-products .text A:link,
-.home-products .text A:visited {
-  margin-top: 4em;
   display: inline-block;
-  border: 7px solid #000000;
-  padding: 1em 1.5em 0.9em;
-  font: 900 14px/1em 'Proxima Nova';
-  color: #000000;
+  vertical-align: top;
+  width: 48%;
+  margin-left: 3%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
 }
 
-.home-products .text A:hover,
-.home-products .text A:active {
-  background: #000000;
-  color: #FFFFFF;
+.home-products .blog-index-post {
+  width: 330px;
+  margin: 26px auto 0;
+  background: #FDC116;
+  box-sizing: border-box;
+  padding: 32px 29px 105px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
 }
+
+.home-products .blog-index-post H3 {
+  margin: 0 0 0.5em;
+  font-size: 166.66%;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.home-products .blog-index-post H4 {
+  margin: 0 0 0.5em;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 77.77%;
+  line-height: 1em;
+}
+
+.home-products .blog-index-post A:link,
+.home-products .blog-index-post A:visited {
+  border-color: #000000;
+  padding: 0.6em 1.9em 0.5em 2em;
+  text-transform: uppercase;
+  font-size: 77.77%;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.home-products .blog-index-post A:hover,
+.home-products .blog-index-post A:active {
+  background: #000000;
+}
+
+.home-products .text .button {
+  border-color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.home-products .text .button:hover { background: #000000; }
 
 #testimonials {
   padding: 3.5em 0 4.5em;
@@ -1681,7 +1724,7 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
   #menu UL LI {
     display: block;
-    padding: 0.4em 0;
+    padding: 0;
   }
 
   #menu UL LI.phone,
@@ -1695,7 +1738,7 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   }
   
   #header.sticky #menu UL LI A,
-  #menu UL LI A { color: #FFFFFF; }
+  #menu UL LI A { color: #FFFFFF; padding: 0.4em 0; display: inline-block; }
   
   #header.sticky #menu UL LI A:before,
   #header.sticky #menu UL LI A:after,
@@ -1704,6 +1747,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   
   #header.sticky #menu UL LI A:after,
   #menu UL LI A:after { bottom: -1px; }
+
+  #menu UL LI UL { display: block; position: static; padding-top: 0; }
 
   #home-banner { height: 500px; }
   #home-banner #logo-round { width: 210px; }
@@ -1797,8 +1842,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   .home-products .text { right: 2%; }
 
   #footer-menu LI { padding: 0 1.89em; }
-  #footer-menu LI:nth-of-type(4) { margin-top: 1em; }
-  #footer-menu LI:nth-of-type(4):before { content: ""; }
+  #footer-menu LI:nth-of-type(5) { margin-top: 1em; }
+  #footer-menu LI:nth-of-type(5):before { content: ""; }
 
   #footer SPAN:last-of-type { display: block; opacity: 0; }
 }
@@ -1809,6 +1854,10 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
     transform: none;
     margin-top: 1em;
   }
+  
+  #footer-menu LI { padding: 0 2.2em; }
+  #footer-menu LI:nth-of-type(4):before { content: ""; }
+  #footer-menu LI:nth-of-type(5):before { content: "/"; }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1843,10 +1892,7 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #testimonials .cycle-slide { width: 90%; }
 
   #footer-images > DIV { float: none; width: 100%; }
-
-  #footer-menu LI:nth-of-type(3):before { content: ""; }
-  #footer-menu LI:nth-of-type(4):before { content: "/"; }
-
+  
   #footer SPAN { display: block; opacity: 0; }
   
   .page-header .site-width { min-height: 0; }
@@ -1943,6 +1989,11 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
   .blog-single-post { flex-direction: column-reverse; }
   .blog-single-sidebar, .blog-single-text { width: 100%; }
+
+  #footer-menu LI { font-size: 18px; padding: 0 2em; }
+  #footer-menu LI:nth-of-type(3) { margin-top: 1em; }
+  #footer-menu LI:nth-of-type(3):before, #footer-menu LI:nth-of-type(5):before { content: ""; }
+  #footer-menu LI:nth-of-type(4):before { content: "/"; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1964,12 +2015,6 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   /*#home-banner:before { padding-top: 100%; }*/
   #home-banner .site-width { font-size: 4vw; }
   #home-banner H1 { font-size: 285%; }
-
-  #footer-menu LI { font-size: 18px; padding: 0 2em; }
-  #footer-menu LI:nth-of-type(3) { margin-top: 1em; }
-  #footer-menu LI:nth-of-type(3):before { content: "/"; }
-  #footer-menu LI:nth-of-type(2):before,
-  #footer-menu LI:nth-of-type(4):before { content: ""; }
 
   .company .right HR {
     display: block;
