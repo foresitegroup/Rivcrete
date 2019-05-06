@@ -23,7 +23,8 @@
 
     <?php if (!isset($PageTitle)) { ?>
     <div class="order-band">
-      <a href="<?php echo $TopDir; ?>contact.php">ORDER CONCRETE</a>
+      <h1>Hiring Now!</h1>
+      <a href="<?php echo $TopDir; ?>employment.php">SEE OPEN POSITIONS</a>
     </div>
     <?php } ?>
 
