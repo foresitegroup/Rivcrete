@@ -290,13 +290,21 @@ UL.double-space LI { padding-bottom: 1em; }
   display: none;
   position: absolute;
   top: 110%;
-  left: 0;
+  left: -1em;
   transform: none;
-  padding-top: 12px;
-  white-space: nowrap;
+  padding: 0.5em 0 1em;
+  font-size: 80%;
+  background: #000000;
 }
 
+#header.sticky #menu UL LI UL { background: #FDC116; font-size: 80%; }
+
 #menu UL LI:hover UL { display: block; }
+
+#menu UL LI UL LI {
+  display: block;
+  padding: 0.5em 1em;
+}
 
 #home-banner {
   height: 684px;
@@ -626,6 +634,8 @@ UL.double-space LI { padding-bottom: 1em; }
   line-height: 1em;
   letter-spacing: 0.1em;
 }
+
+.order-band H1 { font-size: 60px; }
 
 .order-band.white { background: #FFFFFF; }
 
