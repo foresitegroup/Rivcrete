@@ -41,7 +41,7 @@
         <li><a href="<?php echo $TopDir; ?>products-and-services.php">Products</a></li>
         <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
         <li><a href="<?php echo $TopDir; ?>contact.php">Order Concrete</a></li>
-        <li><a href="<?php echo $TopDir; ?>news">News</a></li>
+        <li><a href="<?php echo $TopDir; ?>blog">News</a></li>
         <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
       </ul>
     </div>
