@@ -3,6 +3,24 @@ $PageTitle = "Employment";
 include "header.php";
 ?>
 
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '139642346563917');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=139642346563917&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 <div class="page-header noimage">
   <div class="site-width">
     <div class="text">
@@ -33,18 +51,6 @@ include "header.php";
     <a href="pdf/Application_for_Employment.pdf" download class="button">Download Application</a>
   </div>
 
-  <!-- <div class="position">
-    <h3>Driver</h3>
-    Posted 4/2/19<br>
-    <a href="#" class="button">Download Application</a>
-  </div>
-
-  <div class="position">
-    <h3>Driver</h3>
-    Posted 4/2/19<br>
-    <a href="#" class="button">Download Application</a>
-  </div> -->
-  
   <div class="footer">
     <h4>To Apply:</h4>
     Email application to <?php email("contactus@rivcrete.com"); ?>, fax to <span>414-455-6069</span> or stop in at our 2761 S Chase Ave location
