@@ -17,7 +17,7 @@ include "header.php";
 
 <div class="site-width company">
   <div class="left">
-    Our newly-renovated, state-of-the-art wet batch plant is accompanied by a second plant and over 40 Riv/Crete branded trucks to accommodate multiple large projects simultaneously. In addition, we have established an expansive line of building products to provide our customers with any construction materials they may need, such as sealers, decorative products and other building materials. We are proudly the largest ready mix company based in Milwaukee.<br>
+    Our three state-of-the-art concrete batch plants support each other along with over 60 ready mix trucks to accommodate multiple large projects simultaneously. In addition, we have established an expansive line of building products to provide our customers with any construction materials they may need, such as sealers, decorative products and other building materials. We are proudly the largest family owned ready mix company based in Milwaukee.<br>
     <br>
 
     Riv/Crete is owned and operated by the Rivecca family, which has decades of experience in the concrete and construction industry. As a family business, our company follows the same set of values:<br>
@@ -44,7 +44,7 @@ include "header.php";
     </div>
 
     <hr>
-    
+
     <div class="locations">
       <h4>LOCATIONS</h4><br>
 
