@@ -27,12 +27,14 @@
       <a href="<?php echo $TopDir; ?>employment.php">SEE OPEN POSITIONS</a>
     </div>
     <?php } ?>
-
+    
+    <?php if (!isset($FooterImages)) { ?>
     <div id="footer-images" class="cf">
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer2.jpg);"></div>
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer3.jpg);"></div>
     </div>
+    <?php } ?>
 
     <div id="prefooter">
       <img src="<?php echo $TopDir; ?>images/apple-touch-icon.png" alt="">
