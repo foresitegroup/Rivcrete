@@ -1362,22 +1362,70 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   font: 900 24px/1em 'Proxima Nova';
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  width: 53%;
 }
 
-.employment .position .button:link, .employment .position .button:visited {
+.employment .position LABEL {
+  color: #FDC116;
+  font-family: 'Proxima Nova';
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.employment .position INPUT[type="checkbox"] + LABEL:before { content: "See "; }
+.employment .position INPUT[type="checkbox"]:checked + LABEL:before { content: "Hide "; }
+
+.employment .position INPUT[type="checkbox"] + LABEL:after {
+  content: "\0203a";
+  display: inline-block;
+  margin-left: 0.25em;
+  font-size: 1.3em;
+}
+.employment .position INPUT[type="checkbox"]:checked + LABEL:after {
+  transform: rotate(90deg) translateX(0.2em);
+}
+
+.employment .position INPUT[type="checkbox"] + LABEL ~ .details {
+  overflow: hidden;
+  transition: all 0.4s;
+  height: 0;
+}
+
+.employment .position INPUT[type="checkbox"]:checked + LABEL ~ .details {
+  margin-top: 1.5em;
+  height: auto;
+}
+
+.employment .position .details UL { margin: 0 0 0 0.7em; padding: 0 0 0 0.7em; }
+
+.employment .position .links {
   position: absolute;
-  top: 50%;
+  top: 30px;
   right: 0;
-  transform: translateY(-50%);
+  width: 47%;
+  text-align: right;
+}
+
+.employment .position .button {
+  min-width: 270px;
+  box-sizing: border-box;
+  margin-left: 1em;
   border-color: #000000;
   padding: 0.7em 1em 0.5em 1.1em;
   font-size: 14px;
   line-height: 1em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.employment .position .button:hover, .employment .position .button:active {
+.employment .position .button:first-of-type { margin-left: 0; }
+
+.employment .position .button:hover {
   background: #000000;
 }
 
@@ -1407,6 +1455,17 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
 .employment .footer A:hover, .employment .footer A:active {
   color: #FDC116;
+}
+
+#employment-footer {
+  background: url(../images/employment-footer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#employment-footer:before {
+  content: "";
+  display: block;
+  padding-top: 25%;
 }
 
 .blog-index { width: 1100px; padding: 68px 0; }
@@ -1589,6 +1648,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
 
   .portfolio .port-text .text { font-size: 1.48vw; padding: 0 54vw 0 18px; }
   .portfolio:nth-child(even) .port-text .text { padding: 0 18px 0 54vw; }
+
+  .employment .position .button { min-width: 0; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1610,6 +1671,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #menu UL LI.phone { font-size: 14px; line-height: 1em; }
 
   #footer-menu LI { padding: 0 1em; }
+
+  .employment .position .button { font-size: 1.333vw; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1856,15 +1919,13 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #footer-menu LI:nth-of-type(5):before { content: ""; }
 
   #footer SPAN:last-of-type { display: block; opacity: 0; }
+  
+  .employment .position H3 { width: 100%; }
+  .employment .position .links { position: static; width: 100%; margin-top: 1.25em; text-align: left; }
+  .employment .position .button { min-width: 270px; font-size: 14px; }
 }
 
 @media only screen and (max-width: 700px) {
-  .employment .position .button:link, .employment .position .button:visited {
-    position: static;
-    transform: none;
-    margin-top: 1em;
-  }
-  
   #footer-menu LI { padding: 0 2.2em; }
   #footer-menu LI:nth-of-type(4):before { content: ""; }
   #footer-menu LI:nth-of-type(5):before { content: "/"; }
@@ -2004,6 +2065,10 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #footer-menu LI:nth-of-type(3) { margin-top: 1em; }
   #footer-menu LI:nth-of-type(3):before, #footer-menu LI:nth-of-type(5):before { content: ""; }
   #footer-menu LI:nth-of-type(4):before { content: "/"; }
+  
+  .employment .position .links { max-width: 540px; }
+  .employment .position .button { margin: 1em 0 0; }
+  .employment .position .button:first-of-type { margin: 0; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2054,6 +2119,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   .portfolio .port-text { margin-top: 10vw; }
 
   .portfolio .port-text:before { font-size: 70px; top: -20vw; }
+
+  .employment .footer { overflow-wrap: break-word; word-wrap: break-word; }
 }
 
 @media only screen and (max-width: 320px) {
