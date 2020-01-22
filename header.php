@@ -77,9 +77,9 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
               <a href="<?php echo $TopDir; ?>company.php">Company</a>
               <ul>
                 <li><a href="<?php echo $TopDir; ?>blog">News</a></li>
-                <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
               </ul>
             </li>
+            <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
             <li class="phone">(414) 455-6070</li>
           </ul>
