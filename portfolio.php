@@ -19,6 +19,52 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>Saint John's On The Lake</h3>
+      <h4>Education, Healthcare & Public Design Award Winner</h4>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The new 22 story <em>Saint John's On The Lake</em> North Tower is not only transforming the city's skyline but also the perception of Milwaukee throughout the country.  This new 420,000 square foot facility provides high-end senior living on par with any major city in the country.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-st-johns1.jpg);"></div>
+      <div style="background-image: url(images/portfolio-st-johns2.jpg);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div>
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Dayton Freight</h3>
+      <h4>Parking Lot Design Award Winner</h4>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The recently completed Dayton Freight distribution facility located in Sturtevant, WI is one of the most impressive distribution centers in the state of Wisconsin. What sets it apart from other facilities is the use of ready-mix concrete in its parking lot and high traffic areas.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-dayton1.jpg);"></div>
+      <div style="background-image: url(images/portfolio-dayton2.jpg);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>Ixonia Bank</h3>
       <h4>South Eastern Wisconsin Design Award Winner</h4>
     </div>
