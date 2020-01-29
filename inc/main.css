@@ -1107,7 +1107,8 @@ INPUT[type="submit"]:hover {
 
 .radio { text-align: left; padding: 1em 0 2.5em 5%; }
 
-.radio LABEL, LABEL[for="send-updates"] {
+.radio LABEL, LABEL[for="send-updates"],
+LABEL[for="authorization"], LABEL[for="certify"] {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -1115,7 +1116,8 @@ INPUT[type="submit"]:hover {
   margin-left: 1em;
 }
 
-.radio LABEL:after, LABEL[for="send-updates"]:before {
+.radio LABEL:after, LABEL[for="send-updates"]:before,
+LABEL[for="authorization"]:before, LABEL[for="certify"]:before {
   content: "";
   display: inline-block;
   width: 0.9em;
@@ -1132,7 +1134,20 @@ INPUT[type="submit"]:hover {
 INPUT[type="radio"], INPUT[type="checkbox"] { display: none; }
 
 INPUT[type="radio"]:checked + LABEL:after,
-INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: #FDC116; }
+INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before,
+INPUT[type="checkbox"]:checked + LABEL[for="authorization"]:before,
+INPUT[type="checkbox"]:checked + LABEL[for="certify"]:before { background: #FDC116; }
+
+INPUT.alert { outline: 2px solid #FDC116; }
+
+INPUT.alert::-webkit-input-placeholder { color: #FDC116; }
+INPUT.alert:-moz-placeholder { color: #FDC116; }
+INPUT.alert::-moz-placeholder { color: #FDC116; }
+INPUT.alert:-ms-input-placeholder { color: #FDC116; }
+INPUT.alert:focus::-webkit-input-placeholder { color: transparent; }
+INPUT.alert:focus:-moz-placeholder { color: transparent; }
+INPUT.alert:focus::-moz-placeholder { color: transparent; }
+INPUT.alert:focus:-ms-input-placeholder { color: transparent; }
 
 #contact #name,
 #contact #email {
@@ -1472,6 +1487,101 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   padding-top: 25%;
 }
 
+#application { padding: 6.5em 0 4em; }
+
+#application INPUT[type="text"],
+#application INPUT[type="email"],
+#application INPUT[type="tel"],
+#application TEXTAREA { border: 7px solid rgba(0,0,0,0.75); background: #FFFFFF; color: #000000; }
+
+#application INPUT::-webkit-input-placeholder { color: rgba(0,0,0,0.4); opacity: 1; }
+#application INPUT:-moz-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* FF 4-18 */
+#application INPUT::-moz-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* FF 19+ */
+#application INPUT:-ms-input-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* IE 10+ */
+#application TEXTAREA::-webkit-input-placeholder { color: rgba(0,0,0,0.4); opacity: 1; }
+#application TEXTAREA:-moz-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* FF 4-18 */
+#application TEXTAREA::-moz-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* FF 19+ */
+#application TEXTAREA:-ms-input-placeholder { color: rgba(0,0,0,0.4); opacity: 1; } /* IE 10+ */
+
+#application INPUT:focus::-webkit-input-placeholder { color: transparent; }
+#application INPUT:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+#application INPUT:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+#application INPUT:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+#application TEXTAREA:focus::-webkit-input-placeholder { color: transparent; }
+#application TEXTAREA:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+#application TEXTAREA:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+#application TEXTAREA:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+#application INPUT.alert { outline: 0; border-color: #FDC116; }
+
+#application INPUT.alert::-webkit-input-placeholder { color: #FDC116; }
+#application INPUT.alert:-moz-placeholder { color: #FDC116; }
+#application INPUT.alert::-moz-placeholder { color: #FDC116; }
+#application INPUT.alert:-ms-input-placeholder { color: #FDC116; }
+#application INPUT.alert:focus::-webkit-input-placeholder { color: transparent; }
+#application INPUT.alert:focus:-moz-placeholder { color: transparent; }
+#application INPUT.alert:focus::-moz-placeholder { color: transparent; }
+#application INPUT.alert:focus:-ms-input-placeholder { color: transparent; }
+
+#application H4 {
+  margin: 0.5em 0 0.25em;
+  color: #FDC116;
+  font: 400 28px/1em 'Squada One', cursive;
+  text-transform: uppercase;
+}
+
+#application .label {
+  font: 800 18px/1em 'Proxima Nova';
+  text-transform: uppercase;
+  margin-bottom: 2.68%;
+  align-self: center;
+}
+
+#application .two-col, #application .three-col,
+#application .four-col, #application .five-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#application .two-col > DIV, #application .two-col INPUT { width: 48.66% !important; }
+#application .three-col > DIV, #application .three-col INPUT { width: 31.54% !important; }
+#application .four-col > DIV, #application .four-col INPUT { width: 23% !important; }
+#application .five-col > DIV, #application .five-col INPUT { width: 17.856% !important; }
+
+#application .two-col > DIV, #application .three-col > DIV,
+#application .four-col > DIV, #application .five-col > DIV { margin-bottom: 2.68%; }
+
+#application INPUT[name^="address_prev"],
+#application INPUT[name^="city_prev"] { width: 28.14% !important; }
+
+#application INPUT[name^="state_prev"],
+#application INPUT[name^="zip_prev"],
+#application INPUT[name^="years_prev"] { width: 11% !important; }
+
+#application INPUT[name^="nature_accident"] { width: 32.424% !important; }
+#application INPUT[name^="fatalities_accident"],
+#application INPUT[name^="injuries_accident"] { width: 13% !important; }
+
+#application .five-col .radio { width: 13% !important; padding: 0; text-align: center; align-self: center; }
+#application .five-col .radio LABEL:first-of-type { margin-left: 0; }
+#application .five-col .radio DIV { font: 800 16px/1em 'Proxima Nova'; text-transform: uppercase; }
+
+#application .radio-inline { padding: 0 0 0.5em; font-size: 18px; }
+
+#application TEXTAREA { height: 8em; }
+
+LABEL[for="authorization"], LABEL[for="certify"] {
+  margin-left: 0;
+  background: #FDC116;
+  padding: 0.25em 0.5em 0.25em 1.7em;
+}
+
+LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
+
+#authorization ~ #certify ~ INPUT[name="submit"] { pointer-events: none; opacity: 0.5; }
+#authorization:checked ~ #certify:checked ~ INPUT[name="submit"] { pointer-events: auto; opacity: 1; }
+
 .blog-index { width: 1100px; padding: 68px 0; }
 
 .blog-index .pagination {
@@ -1706,6 +1816,8 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   .order LABEL { font-size: 2.5vw; }
 
   #contact > DIV { width: 80%; }
+
+  #application TABLE TD.radio LABEL:last-of-type { margin-left: 6%; }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1739,6 +1851,20 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   .decorative > DIV:nth-of-type(even) { margin-right: 0; }
 
   .blog-index .blog-index-posts .blog-index-post { width: 46.5%; }
+
+  #application .four-col DIV, #application .four-col INPUT { width: 48.66% !important; }
+
+  #application INPUT[name^="address_prev"],
+  #application INPUT[name^="city_prev"],
+  #application INPUT[name^="dates_accident"],
+  #application INPUT[name^="nature_accident"] { width: 48.66% !important; }
+
+  #application INPUT[name^="state_prev"],
+  #application INPUT[name^="zip_prev"],
+  #application INPUT[name^="years_prev"],
+  #application INPUT[name^="fatalities_accident"],
+  #application INPUT[name^="injuries_accident"],
+  #application .five-col .radio { width: 31.54% !important; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1938,6 +2064,20 @@ INPUT[type="checkbox"]:checked + LABEL[for="send-updates"]:before { background: 
   #footer-menu LI { padding: 0 2.2em; }
   #footer-menu LI:nth-of-type(4):before { content: ""; }
   #footer-menu LI:nth-of-type(5):before { content: "/"; }
+
+  #application .two-col DIV, #application .two-col INPUT,
+  #application .three-col DIV, #application .three-col INPUT,
+  #application .four-col DIV, #application .four-col INPUT,
+  #application INPUT[name^="address_prev"],
+  #application INPUT[name^="city_prev"],
+  #application INPUT[name^="state_prev"],
+  #application INPUT[name^="zip_prev"],
+  #application INPUT[name^="years_prev"],
+  #application INPUT[name^="dates_accident"],
+  #application INPUT[name^="nature_accident"],
+  #application INPUT[name^="fatalities_accident"],
+  #application INPUT[name^="injuries_accident"],
+  #application .five-col .radio { width: 100% !important; }
 }
 
 @media only screen and (max-width: 600px) {
