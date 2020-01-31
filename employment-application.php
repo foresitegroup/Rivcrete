@@ -350,7 +350,9 @@ include_once "inc/fintoozler.php";
 
     <div class="g-recaptcha" data-sitekey="<?php echo RECAPTCHA_SITE_KEY; ?>"></div><br>
 
-    <input type="submit" name="submit" value="SUBMIT APPLICATION">
+    <div id="submit-nullifier">
+      <input type="submit" name="submit" value="SUBMIT APPLICATION">
+    </div>
   </div>
 </form>
 

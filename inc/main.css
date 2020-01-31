@@ -1579,8 +1579,24 @@ LABEL[for="authorization"], LABEL[for="certify"] {
 
 LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
-#authorization ~ #certify ~ INPUT[name="submit"] { pointer-events: none; opacity: 0.5; }
-#authorization:checked ~ #certify:checked ~ INPUT[name="submit"] { pointer-events: auto; opacity: 1; }
+#authorization ~ #certify ~ #submit-nullifier { display: inline-block; cursor: not-allowed; }
+
+#authorization ~ #certify ~ #submit-nullifier:after {
+  content: "Make sure the highlighted checkboxes are checked.";
+  margin-left: 0.5em;
+  background: #FDC116;
+  padding: 0.25em 0.5em;
+  cursor: default;
+}
+
+#authorization ~ #certify ~ #submit-nullifier INPUT[type="submit"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#authorization:checked ~ #certify:checked ~ #submit-nullifier { cursor: pointer; }
+#authorization:checked ~ #certify:checked ~ #submit-nullifier:after { content: ""; margin: 0; padding: 0; }
+#authorization:checked ~ #certify:checked ~ #submit-nullifier INPUT[type="submit"] { pointer-events: auto; opacity: 1; }
 
 .blog-index { width: 1100px; padding: 68px 0; }
 
