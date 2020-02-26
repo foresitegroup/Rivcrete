@@ -25,13 +25,11 @@ if ($responsekeys->success) {
     $Message .= $_POST['city'].", ".$_POST['state']." ".$_POST['zip']."\n";
     if ($_POST['howlong'] != "") $Message .= "How Long At This Address? ".$_POST['howlong']."\n";
     $Message .= "\n";
-
-    if ($_POST['dob'] != "") $Message .= "Date of Birth: ".$_POST['dob']."\n";
-    if ($_POST['ssn'] != "") $Message .= "Social Security Number: ".$_POST['ssn']."\n";
-    if ($_POST['dob'] != "" || $_POST['ssn'] != "") $Message .= "\n";
-
+    
     $Message .= $_POST['phone'] . "\n";
-    $Message .= $_POST['email'] . "\n\n";
+    $Message .= $_POST['email'] . "\n";
+    if ($_POST['dob'] != "") $Message .= "Date of Birth: ".$_POST['dob']."\n";
+    $Message .= "\n";
     
     // BEGIN Residency section
     $res = "no";

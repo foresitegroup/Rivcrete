@@ -42,12 +42,10 @@ include_once "inc/fintoozler.php";
       <input type="text" name="howlong" placeholder="How Long At This Address?">
     </div>
 
-    <div class="two-col">
-      <input type="text" name="dob" placeholder="Date of Birth">
-      <input type="text" name="ssn" placeholder="Social Security Number">
-
+    <div class="three-col">
       <input type="tel" name="phone" placeholder="Phone Number" required>
       <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="dob" placeholder="Date of Birth">
     </div>
 
     <h4>Previous Three Years Residency</h4>
