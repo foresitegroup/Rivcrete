@@ -4,5 +4,5 @@ blog/*
 blog/wp-content/*
 !blog/wp-content/themes/
 blog/wp-content/themes/*
-!blog/wp-content/themes/rivcrete
+!blog/wp-content/themes/rivcrete/
 blog/wp-content/themes/rivcrete/.DS_Store
