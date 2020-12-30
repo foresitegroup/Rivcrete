@@ -159,6 +159,26 @@ UL.double-space LI { padding-bottom: 1em; }
 
 .yellowtext { color: #FDC116; }
 
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video235 .video { padding-bottom: 37.6% }
+ 
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #header-spacer { height: 104px; }
 
 #header {
@@ -1716,6 +1736,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 .blog-single-text P { margin: 0 0 1.5em; }
 
 .blog-single-text UL { margin: 0 0 0 0.7em; padding: 0 0 0 0.7em; transform: translateY(-1.5em); }
+
+.blog-single-text .video { margin-bottom: 1.5em; }
 
 
 @media only screen and (min-width: 3000px) {
