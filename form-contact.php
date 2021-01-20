@@ -8,7 +8,6 @@ if ($_POST['confirmationCAP'] == "") {
       $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
       $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
       $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-      $_POST['contact'] != "" &&
       $_POST[md5('message' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
      )
   {
@@ -99,10 +98,10 @@ if ($_POST['confirmationCAP'] == "") {
       echo $feedback;
     }
   }
-}
 
-if (empty($_REQUEST['src'])) {
-  $_SESSION['feedback'] = $feedback;
-  header("Location: " . $_POST['referrer'] . "#contact-form");
+  if (empty($_REQUEST['src'])) {
+    $_SESSION['feedback'] = $feedback;
+    header("Location: " . $_POST['referrer'] . "#contact-form");
+  }
 }
 ?>
