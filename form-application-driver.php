@@ -9,7 +9,7 @@ if ($responsekeys->success) {
     $_POST['firstname'] != "" && $_POST['lastname'] != "" && $_POST['address'] != "" && $_POST['city'] != ""
     && $_POST['state'] != "" && $_POST['zip'] != "" && $_POST['phone'] != "" && $_POST['email'] != ""
   ) {
-    $Subject = "Employment Application";
+    $Subject = "Employment Application (Driver)";
     $SendTo = "contactus@rivcrete.com";
     $Headers = "From: Employment Application Form <donotreply@rivcrete.com>\r\n";
     $Headers .= "Reply-To: " . $_POST['email'] . "\r\n";
@@ -81,6 +81,105 @@ if ($responsekeys->success) {
     if ($_POST['lic_expiration'] != "") $Message .= "Expiration Date: ".$_POST['lic_expiration']."\n";
     if ($lic == "yes") $Message .= "\n\n";
     // END License section
+
+    // BEGIN Driving Experience section
+    $driving = "no";
+    foreach($_POST as $key => $value) if (strpos($key, "driving_") === 0) if ($_POST[$key] != "") $driving = "yes";
+    if ($driving == "yes") $Message .= "DRIVING EXPERIENCE\n";
+
+    if ($_POST['driving_type_straight'] != "" || $_POST['driving_dates_straight'] != "" || $_POST['driving_miles_straight']) $Message .= "Straight Truck\n";
+    if ($_POST['driving_type_straight'] != "") $Message .= "Type of Equipment: ".$_POST['driving_type_straight']."\n";
+    if ($_POST['driving_dates_straight'] != "") $Message .= "Dates From / To: ".$_POST['driving_dates_straight']."\n";
+    if ($_POST['driving_miles_straight'] != "") $Message .= "Approx # Miles Total: ".$_POST['driving_miles_straight']."\n";
+    if ($_POST['driving_type_straight'] != "" || $_POST['driving_dates_straight'] != "" || $_POST['driving_miles_straight']) $Message .= "\n";
+
+    if ($_POST['driving_type_semi'] != "" || $_POST['driving_dates_semi'] != "" || $_POST['driving_miles_semi']) $Message .= "Tractor and Semi-Trailer\n";
+    if ($_POST['driving_type_semi'] != "") $Message .= "Type of Equipment: ".$_POST['driving_type_semi']."\n";
+    if ($_POST['driving_dates_semi'] != "") $Message .= "Dates From / To: ".$_POST['driving_dates_semi']."\n";
+    if ($_POST['driving_miles_semi'] != "") $Message .= "Approx # Miles Total: ".$_POST['driving_miles_semi']."\n";
+    if ($_POST['driving_type_semi'] != "" || $_POST['driving_dates_semi'] != "" || $_POST['driving_miles_semi']) $Message .= "\n";
+
+    if ($_POST['driving_type_two'] != "" || $_POST['driving_dates_two'] != "" || $_POST['driving_miles_two']) $Message .= "Tractor - Two Trailers\n";
+    if ($_POST['driving_type_two'] != "") $Message .= "Type of Equipment: ".$_POST['driving_type_two']."\n";
+    if ($_POST['driving_dates_two'] != "") $Message .= "Dates From / To: ".$_POST['driving_dates_two']."\n";
+    if ($_POST['driving_miles_two'] != "") $Message .= "Approx # Miles Total: ".$_POST['driving_miles_two']."\n";
+    if ($_POST['driving_type_two'] != "" || $_POST['driving_dates_two'] != "" || $_POST['driving_miles_two']) $Message .= "\n";
+
+    if ($_POST['driving_type_other'] != "" || $_POST['driving_dates_other'] != "" || $_POST['driving_miles_other']) $Message .= "Other\n";
+    if ($_POST['driving_type_other'] != "") $Message .= "Type of Equipment: ".$_POST['driving_type_other']."\n";
+    if ($_POST['driving_dates_other'] != "") $Message .= "Dates From / To: ".$_POST['driving_dates_other']."\n";
+    if ($_POST['driving_miles_other'] != "") $Message .= "Approx # Miles Total: ".$_POST['driving_miles_other']."\n";
+    if ($_POST['driving_type_other'] != "" || $_POST['driving_dates_other'] != "" || $_POST['driving_miles_other']) $Message .= "\n";
+
+    if ($driving == "yes") $Message .= "\n";
+    // END Driving Experience section
+
+    // BEGIN Accident section
+    $accident = "no";
+    foreach($_POST as $key => $value) if (strpos($key, "accident_") === 0) if ($_POST[$key] != "") $accident = "yes";
+    if ($accident == "yes") $Message .= "ACCIDENT RECORD FOR PAST 3 YEARS OR MORE\n";
+
+    if ($_POST['accident_dates1'] != "") $Message .= "Dates: ".$_POST['accident_dates1']."\n";
+    if ($_POST['accident_nature1'] != "") $Message .= "Nature of Accident: ".$_POST['accident_nature1']."\n";
+    if ($_POST['accident_fatalities1'] != "") $Message .= "# Fatalities: ".$_POST['accident_fatalities1']."\n";
+    if ($_POST['accident_injuries1'] != "") $Message .= "# Injuries: ".$_POST['accident_injuries1']."\n";
+    if ($_POST['accident_chemical1'] != "") $Message .= "Chemical Spills: ".$_POST['accident_chemical1']."\n";
+    if ($_POST['accident_dates1'] != "" || $_POST['accident_nature1'] != "" || $_POST['accident_fatalities1'] != "" || $_POST['accident_injuries1'] || $_POST['accident_chemical1'] != "") $Message .= "\n";
+
+    if ($_POST['accident_dates2'] != "") $Message .= "Dates: ".$_POST['accident_dates2']."\n";
+    if ($_POST['accident_nature2'] != "") $Message .= "Nature of Accident: ".$_POST['accident_nature2']."\n";
+    if ($_POST['accident_fatalities2'] != "") $Message .= "# Fatalities: ".$_POST['accident_fatalities2']."\n";
+    if ($_POST['accident_injuries2'] != "") $Message .= "# Injuries: ".$_POST['accident_injuries2']."\n";
+    if ($_POST['accident_chemical2'] != "") $Message .= "Chemical Spills: ".$_POST['accident_chemical2']."\n";
+    if ($_POST['accident_dates2'] != "" || $_POST['accident_nature2'] != "" || $_POST['accident_fatalities2'] != "" || $_POST['accident_injuries2'] || $_POST['accident_chemical2'] != "") $Message .= "\n";
+
+    if ($_POST['accident_dates3'] != "") $Message .= "Dates: ".$_POST['accident_dates3']."\n";
+    if ($_POST['accident_nature3'] != "") $Message .= "Nature of Accident: ".$_POST['accident_nature3']."\n";
+    if ($_POST['accident_fatalities3'] != "") $Message .= "# Fatalities: ".$_POST['accident_fatalities3']."\n";
+    if ($_POST['accident_injuries3'] != "") $Message .= "# Injuries: ".$_POST['accident_injuries3']."\n";
+    if ($_POST['accident_chemical3'] != "") $Message .= "Chemical Spills: ".$_POST['accident_chemical3']."\n";
+    if ($_POST['accident_dates3'] != "" || $_POST['accident_nature3'] != "" || $_POST['accident_fatalities3'] != "" || $_POST['accident_injuries3'] || $_POST['accident_chemical3'] != "") $Message .= "\n";
+
+    if ($_POST['accident_additional'] != "") $Message .= "Additional space if needed\n".$_POST['accident_additional']."\n";
+
+    if ($accident == "yes") $Message .= "\n";
+    // END Accident section
+
+    // BEGIN Traffic Convictions section
+    $traffic = "no";
+    foreach($_POST as $key => $value) if (strpos($key, "traffic_") === 0) if ($_POST[$key] != "") $traffic = "yes";
+    if ($traffic == "yes") $Message .= "TRAFFIC CONVICTIONS AND FORFEITURES FOR THE PAST 3 YEARS\n";
+
+    if ($_POST['traffic_date1'] != "") $Message .= "Date Convicted: ".$_POST['traffic_date1']."\n";
+    if ($_POST['traffic_violation1'] != "") $Message .= "Violation: ".$_POST['traffic_violation1']."\n";
+    if ($_POST['traffic_state1'] != "") $Message .= "Violation Location: ".$_POST['traffic_state1']."\n";
+    if ($_POST['traffic_penalty1'] != "") $Message .= "Penalty: ".$_POST['traffic_penalty1']."\n";
+    if ($_POST['traffic_date1'] != "" || $_POST['traffic_violation1'] != "" || $_POST['traffic_state1'] != "" || $_POST['traffic_penalty1']) $Message .= "\n";
+
+    if ($_POST['traffic_date2'] != "") $Message .= "Date Convicted: ".$_POST['traffic_date2']."\n";
+    if ($_POST['traffic_violation2'] != "") $Message .= "Violation: ".$_POST['traffic_violation2']."\n";
+    if ($_POST['traffic_state2'] != "") $Message .= "Violation Location: ".$_POST['traffic_state2']."\n";
+    if ($_POST['traffic_penalty2'] != "") $Message .= "Penalty: ".$_POST['traffic_penalty2']."\n";
+    if ($_POST['traffic_date2'] != "" || $_POST['traffic_violation2'] != "" || $_POST['traffic_state2'] != "" || $_POST['traffic_penalty2']) $Message .= "\n";
+
+    if ($_POST['traffic_date3'] != "") $Message .= "Date Convicted: ".$_POST['traffic_date3']."\n";
+    if ($_POST['traffic_violation3'] != "") $Message .= "Violation: ".$_POST['traffic_violation3']."\n";
+    if ($_POST['traffic_state3'] != "") $Message .= "Violation Location: ".$_POST['traffic_state3']."\n";
+    if ($_POST['traffic_penalty3'] != "") $Message .= "Penalty: ".$_POST['traffic_penalty3']."\n";
+    if ($_POST['traffic_date3'] != "" || $_POST['traffic_violation3'] != "" || $_POST['traffic_state3'] != "" || $_POST['traffic_penalty3']) $Message .= "\n";
+
+    if ($_POST['traffic_additional'] != "") $Message .= "Additional space if needed\n".$_POST['traffic_additional']."\n";
+
+    if ($traffic == "yes") $Message .= "\n";
+    // END Traffic Convictions section
+
+    if ($_POST['denied'] != "") $Message .= "Have you ever been denied a license, permit or privilege to operate a motor vehicle? ".$_POST['denied']."\n";
+    if ($_POST['denied_explain'] != "") $Message .= "If yes, explain: ".$_POST['denied_explain']."\n";
+    if ($_POST['denied'] != "" || $_POST['denied_explain'] != "") $Message .= "\n";
+
+    if ($_POST['revoked'] != "") $Message .= "Has any license, permit or privilege ever been suspended or revoked? ".$_POST['revoked']."\n";
+    if ($_POST['revoked_explain'] != "") $Message .= "If yes, explain: ".$_POST['revoked_explain']."\n";
+    if ($_POST['revoked'] != "" || $_POST['revoked_explain'] != "") $Message .= "\n";
 
     // BEGIN Employment Record section
     $employer = "no";

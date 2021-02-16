@@ -1,5 +1,5 @@
 <?php
-$PageTitle = "Employment Application";
+$PageTitle = "Employment Application (Driver)";
 include "header.php";
 include_once "inc/fintoozler.php";
 ?>
@@ -7,14 +7,14 @@ include_once "inc/fintoozler.php";
 <div class="page-header noimage">
   <div class="site-width">
     <div class="text">
-      <h1>Employment Application</h1>
+      <h1>Employment Application (Driver)</h1>
     </div>
 
     <div class="image"></div>
   </div>
 </div>
 
-<form action="form-application.php" method="POST" id="application" novalidate>
+<form action="form-application-driver.php" method="POST" id="application" novalidate>
   <div class="site-width">
 
     <h4>Personal Information</h4>
@@ -82,6 +82,110 @@ include_once "inc/fintoozler.php";
 
       <input type="text" name="lic_expiration" placeholder="Expiration Date">
     </div>
+
+    <h4>Driving Experience</h4>
+    <div class="four-col">
+      <div class="label">Straight Truck</div>
+      <input type="text" name="driving_type_straight" placeholder="Type of Equipment">
+      <input type="text" name="driving_dates_straight" placeholder="Dates From / To">
+      <input type="text" name="driving_miles_straight" placeholder="Approx # Miles Total">
+
+      <div class="label">Tractor and Semi-Trailer</div>
+      <input type="text" name="driving_type_semi" placeholder="Type of Equipment">
+      <input type="text" name="driving_dates_semi" placeholder="Dates From / To">
+      <input type="text" name="driving_miles_semi" placeholder="Approx # Miles Total">
+
+      <div class="label">Tractor - Two Trailers</div>
+      <input type="text" name="driving_type_two" placeholder="Type of Equipment">
+      <input type="text" name="driving_dates_two" placeholder="Dates From / To">
+      <input type="text" name="driving_miles_two" placeholder="Approx # Miles Total">
+
+      <div class="label">Other</div>
+      <input type="text" name="driving_type_other" placeholder="Type of Equipment">
+      <input type="text" name="driving_dates_other" placeholder="Dates From / To">
+      <input type="text" name="driving_miles_other" placeholder="Approx # Miles Total">
+    </div>
+
+    <h4>Accident Record for Past 3 Years or More</h4>
+    <div class="five-col">
+      <input type="text" name="accident_dates1" placeholder="Dates">
+      <input type="text" name="accident_nature1" placeholder="Nature of Accident">
+      <input type="text" name="accident_fatalities1" placeholder="# Fatalities">
+      <input type="text" name="accident_injuries1" placeholder="# Injuries">
+      <div class="radio">
+        <div>Chemical Spills</div>
+        <input type="radio" name="accident_chemical1" value="Yes" id="ac1y">
+        <label for="ac1y">Yes</label>
+        <input type="radio" name="accident_chemical1" value="No" id="ac1n">
+        <label for="ac1n">No</label>
+      </div>
+
+      <input type="text" name="accident_dates2" placeholder="Dates">
+      <input type="text" name="accident_nature2" placeholder="Nature of Accident">
+      <input type="text" name="accident_fatalities2" placeholder="# Fatalities">
+      <input type="text" name="accident_injuries2" placeholder="# Injuries">
+      <div class="radio">
+        <div>Chemical Spills</div>
+        <input type="radio" name="accident_chemical2" value="Yes" id="ac2y">
+        <label for="ac2y">Yes</label>
+        <input type="radio" name="accident_chemical2" value="No" id="ac2n">
+        <label for="ac2n">No</label>
+      </div>
+
+      <input type="text" name="accident_dates3" placeholder="Dates">
+      <input type="text" name="accident_nature3" placeholder="Nature of Accident">
+      <input type="text" name="accident_fatalities3" placeholder="# Fatalities">
+      <input type="text" name="accident_injuries3" placeholder="# Injuries">
+      <div class="radio">
+        <div>Chemical Spills</div>
+        <input type="radio" name="accident_chemical3" value="Yes" id="ac3y">
+        <label for="ac3y">Yes</label>
+        <input type="radio" name="accident_chemical3" value="No" id="ac3n">
+        <label for="ac3n">No</label>
+      </div>
+    </div>
+
+    <textarea name="accident_additional" placeholder="Additional space if needed"></textarea>
+
+    <h4>Traffic Convictions and Forfeitures for the Past 3 Years (Other Than Parking Violations)</h4>
+    <div class="four-col">
+      <input type="text" name="traffic_date1" placeholder="Date Convicted (MM/YY)">
+      <input type="text" name="traffic_violation1" placeholder="Violation">
+      <input type="text" name="traffic_state1" placeholder="Violation Location (State)">
+      <input type="text" name="traffic_penalty1" placeholder="Penalty">
+
+      <input type="text" name="traffic_date2" placeholder="Date Convicted (MM/YY)">
+      <input type="text" name="traffic_violation2" placeholder="Violation">
+      <input type="text" name="traffic_state2" placeholder="Violation Location (State)">
+      <input type="text" name="traffic_penalty2" placeholder="Penalty">
+
+      <input type="text" name="traffic_date3" placeholder="Date Convicted (MM/YY)">
+      <input type="text" name="traffic_violation3" placeholder="Violation">
+      <input type="text" name="traffic_state3" placeholder="Violation Location (State)">
+      <input type="text" name="traffic_penalty3" placeholder="Penalty">
+    </div>
+
+    <textarea name="traffic_additional" placeholder="Additional space if needed"></textarea>
+
+    <div class="radio radio-inline">
+      Have you ever been denied a license, permit or privilege to operate a motor vehicle?
+      <input type="radio" name="denied" value="Yes" id="denied_yes">
+      <label for="denied_yes">Yes</label>
+      <input type="radio" name="denied" value="No" id="denied_no">
+      <label for="denied_no">No</label>
+    </div>
+
+    <textarea name="denied_explain" placeholder="If yes, explain"></textarea>
+
+    <div class="radio radio-inline">
+      Has any license, permit or privilege ever been suspended or revoked?
+      <input type="radio" name="revoked" value="Yes" id="revoked_yes">
+      <label for="revoked_yes">Yes</label>
+      <input type="radio" name="revoked" value="No" id="revoked_no">
+      <label for="revoked_no">No</label>
+    </div>
+
+    <textarea name="revoked_explain" placeholder="If yes, explain"></textarea>
 
     <h4>Employment Record</h4>
     Applicants that desire to drive in intrastate/interstate commerce must provide the following information on all employers during the previous three years. You must give the same information for all employers you have driven a commercial motor vehicle for the seven years prior to the initial three years (total of ten years employment record).<br>
