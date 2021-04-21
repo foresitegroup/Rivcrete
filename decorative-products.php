@@ -26,6 +26,9 @@ include "header.php";
         <a href="pdf/Liquid_Integral_Color_Chart.pdf"><i class="fg fg-file"></i> LIQUID INTEGRAL COLOR CHART</a><br>
         <br>
 
+        <a href="pdf/Granular_Integral_Color_Chart.pdf"><i class="fg fg-file"></i> GRANULAR INTEGRAL COLOR CHART</a><br>
+        <br>
+
         <i class="fg fg-chevron-right"></i> STAMPS &amp; SKINS
       </div>
     </div>
