@@ -77,6 +77,7 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
               <a href="<?php echo $TopDir; ?>company.php">Company</a>
               <ul>
                 <li><a href="<?php echo $TopDir; ?>blog">News</a></li>
+                <li><a href="<?php echo $TopDir; ?>pdf/Customer_Handbook.pdf">Customer Handbook</a></li>
               </ul>
             </li>
             <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
