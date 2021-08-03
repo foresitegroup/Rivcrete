@@ -326,6 +326,8 @@ UL.double-space LI { padding-bottom: 1em; }
   padding: 0.5em 1em;
 }
 
+#menu UL LI UL LI A { display: inline-block; }
+
 #home-banner {
   height: 684px;
   position: relative;
