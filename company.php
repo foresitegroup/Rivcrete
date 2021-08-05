@@ -26,6 +26,10 @@ include "header.php";
     <strong>We are committed to our customers and ensure superior quality and service, no matter what.</strong><br>
     <br>
 
+    <div class="order-band white" style="text-align: left; padding: 0 0 2em;">
+      <a href="pdf/Customer_Handbook.pdf">CUSTOMER HANDBOOK</a>
+    </div>
+
     <img src="images/company.jpg" alt="">
   </div>
 
