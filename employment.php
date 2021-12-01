@@ -90,7 +90,7 @@ src="https://www.facebook.com/tr?id=139642346563917&ev=PageView&noscript=1"
       <strong>Benefits</strong><br>
       <ul>
         <li>Excellent Health Insurance for the whole family</li>
-        <li>Best 401K anywhere $46.90 per day no match required</li>
+        <li>Industry Leading 401K plan (No match required)</li>
         <li>Overtime after 8 hours and on Saturday</li>
         <li>Home every night</li>
         <li>Paid vacations</li>
