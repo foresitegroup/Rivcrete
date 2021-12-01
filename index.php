@@ -31,7 +31,7 @@ include "header.php";
 <div class="site-width home-products">
   <div class="slides">
     <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
-      <img src="images/home-slider-award.png" alt="">
+      <img src="images/home-slider-award2.png" alt="">
       <img src="images/home-slider7.jpg" alt="">
       <img src="images/home-slider6.jpg" alt="">
       <img src="images/home-slider1.jpg" alt="">
