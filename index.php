@@ -65,6 +65,8 @@ include "header.php";
 
     <a href="blog" class="button">See All News Posts</a>
   </div>
+
+  <div id="carboncure"><embed src="https://mycarboncureapi.com/widgets?widgetName=embeddedTicker&version=1&name=Rivcrete&id=2202&timeframe=All Time&units=Imperial&production=Volume&environmental=Forestland"/></div>
 </div>
 
 <?php include "footer.php"; ?>

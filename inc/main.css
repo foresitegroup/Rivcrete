@@ -492,7 +492,7 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 .home-products {
-  padding: 90px 0;
+  padding: 90px 0 65px;
   position: relative;
 }
 
@@ -602,6 +602,9 @@ UL.double-space LI { padding-bottom: 1em; }
 }
 
 .home-products .text .button:hover { background: #000000; }
+
+#carboncure { height: 275px; margin-top: 4em ; text-align: center; }
+#carboncure EMBED { width: 850px; height: 100%; }
 
 #testimonials {
   padding: 3.5em 0 4.5em;
@@ -1790,8 +1793,6 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #home-about .site-width .text { width: 48%; }
   #home-about .image { right: 2%; width: 46%; }
 
-  .home-products .text { transform: translateY(-50%); }
-  
   .portfolio .port-title H3, .portfolio .port-title H4 { left: 2%; }
   .portfolio:nth-child(even) .port-title H3, .portfolio:nth-child(even) .port-title H4 { left: 98%; }
   .portfolio .port-title H4 { font-size: 0.98vw; }
@@ -1808,8 +1809,6 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
 @media only screen and (max-width: 1100px) {
   #menu UL LI { padding-right: 2vw; }
-
-  .home-products .text { right: 9%; }
 
   .company .right { width: 24%; }
   
@@ -1884,6 +1883,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #home-about { font-size: 4.2vw; }
   #home-about .image { top: 0; }
   #home-about .image:before { height: 1em; }
+
+  #carboncure EMBED { width: 100%; }
 
   .company .right { width: 35%; margin-right: 0; }
 
@@ -2087,8 +2088,6 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
 @media only screen and (max-width: 768px) {
   /* Tablet */
-  .home-products .text { right: 2%; }
-
   #footer-menu LI { padding: 0 1.89em; }
   #footer-menu LI:nth-of-type(5) { margin-top: 1em; }
   #footer-menu LI:nth-of-type(5):before { content: ""; }
@@ -2131,22 +2130,12 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #home-about .site-width .text { width: 100%; }
   #home-about .image { margin-top: 7vw; top: 100%; right: 4%; width: 94%; }
 
-  .home-products .slides { width: 96%; margin: 0 auto 72%; }
+  .home-products .slides { width: 96%; margin: 0 0 5em 2%; }
 
-  .home-products .text {
-    top: auto;
-    right: auto;
-    bottom: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 8.7vw;
-    width: 55%;
-  }
+  .home-products .text { margin-left: 0; font-size: 8.7vw; width: 100%; }
 
   .home-products .text A:link,
-  .home-products .text A:visited {
-    font-size: 27%;
-  }
+  .home-products .text A:visited { margin-top: 0; }
   
   #testimonials { font-size: 24px; }
   #testimonials .cycle-slide { width: 90%; }
