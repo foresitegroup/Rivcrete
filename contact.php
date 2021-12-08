@@ -112,8 +112,7 @@ include "header.php";
         .done(function(response) {
           $(formMessages).html(response);
 
-          $(form).find('input:text, textarea').val('');
-          $('#email').val(''); // Grrr!
+          $(form).find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
           $(form).find('input:radio, input:checked').removeAttr('checked').removeAttr('selected');
         })
         .fail(function(data) {

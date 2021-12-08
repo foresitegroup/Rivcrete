@@ -16,6 +16,7 @@ if ($_POST['confirmationCAP'] == "") {
       include_once "inc/fintoozler.php";
 
       $name = explode(" ", $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])], 2);
+      $lastname = (isset($name[1])) ? $name[1] : "";
 
       $phone = ($_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "") ? $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] : "";
 
@@ -23,7 +24,7 @@ if ($_POST['confirmationCAP'] == "") {
         'email'  => $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])],
         'status' => 'subscribed',
         'firstname' => $name[0],
-        'lastname' => $name[1],
+        'lastname' => $lastname,
         'phone' => $phone
       );
 
@@ -74,7 +75,7 @@ if ($_POST['confirmationCAP'] == "") {
       $Message .= $_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
     $Message .= $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
     $Message .= $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-    $Message .= "Best form of contact: " . $_POST['contact'] . "\n";
+    if (isset($_POST['contact'])) $Message .= "Best form of contact: " . $_POST['contact'] . "\n";
 
     $Message .= "\n";
 

@@ -216,29 +216,29 @@ if ($responsekeys->success) {
     if ($_POST['employer_cfr2'] != "") $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr2']."\n";
     $Message .= "\n";
 
-    if ($_POST['employer_name3'] != "") $Message .= "Third Last Employer Name: ".$_POST['employer_name3']."\n";
-    if ($_POST['employer_phone3'] != "") $Message .= "Phone: ".$_POST['employer_phone3']."\n";
-    if ($_POST['employer_address3'] != "") $Message .= $_POST['employer_address3']."\n";
-    if ($_POST['employer_city3'] != "") $Message .= $_POST['employer_city3'];
-    if ($_POST['employer_city3'] != "" && $_POST['employer_state3'] != "") $Message .= ", ";
-    if ($_POST['employer_state3'] != "") $Message .= $_POST['employer_state3'];
-    if (($_POST['employer_city3'] != "" || $_POST['employer_state3'] != "") && $_POST['employer_zip3']) $Message .= " ";
-    if ($_POST['employer_zip3'] != "") $Message .= $_POST['employer_zip3'];
-    if ($_POST['employer_city3'] != "" || $_POST['employer_state3'] != "" || $_POST['employer_zip3']) $Message .= "\n";
-    if ($_POST['employer_leaving3'] != "") $Message .= "Reasons for Leaving: ".$_POST['employer_leaving3']."\n";
-    if ($_POST['employer_gaps3'] != "") $Message .= "Any gaps in employment and/or unemployment must be explained.\n".$_POST['employer_gaps3']."\n";
-    if ($_POST['employer_fmcsr3'] != "") $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr3']."\n";
-    if ($_POST['employer_cfr3'] != "") $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr3']."\n";
+    if (isset($_POST['employer_name3'])) $Message .= "Third Last Employer Name: ".$_POST['employer_name3']."\n";
+    if (isset($_POST['employer_phone3'])) $Message .= "Phone: ".$_POST['employer_phone3']."\n";
+    if (isset($_POST['employer_address3'])) $Message .= $_POST['employer_address3']."\n";
+    if (isset($_POST['employer_city3'])) $Message .= $_POST['employer_city3'];
+    if (isset($_POST['employer_city3']) && isset($_POST['employer_state3'])) $Message .= ", ";
+    if (isset($_POST['employer_state3'])) $Message .= $_POST['employer_state3'];
+    if ((isset($_POST['employer_city3']) || isset($_POST['employer_state3'])) && isset($_POST['employer_zip3'])) $Message .= " ";
+    if (isset($_POST['employer_zip3'])) $Message .= $_POST['employer_zip3'];
+    if ((isset($_POST['employer_city3']) || isset($_POST['employer_state3'])) && isset($_POST['employer_zip3'])) $Message .= "\n";
+    if (isset($_POST['employer_leaving3'])) $Message .= "Reasons for Leaving: ".$_POST['employer_leaving3']."\n";
+    if (isset($_POST['employer_gaps3'])) $Message .= "Any gaps in employment and/or unemployment must be explained.\n".$_POST['employer_gaps3']."\n";
+    if (isset($_POST['employer_fmcsr3'])) $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr3']."\n";
+    if (isset($_POST['employer_cfr3'])) $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr3']."\n";
     $Message .= "\n";
 
-    if ($_POST['employer_additional'] != "") $Message .= "Additional space if needed\n".$_POST['employer_additional']."\n";
+    if (isset($_POST['employer_additional'])) $Message .= "Additional space if needed\n".$_POST['employer_additional']."\n";
 
     if ($employer == "yes") $Message .= "\n";
     // END Employment Record section
 
-    if ($_POST['authorization'] != "") $Message .= $_POST['authorization']."\n\n";
+    if (isset($_POST['authorization'])) $Message .= $_POST['authorization']."\n\n";
 
-    if ($_POST['certify'] != "") $Message .= $_POST['certify']."\n\n";
+    if (isset($_POST['certify'])) $Message .= $_POST['certify']."\n\n";
 
     $Message = stripslashes($Message);
 
