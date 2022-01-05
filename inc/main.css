@@ -1020,7 +1020,7 @@ UL.double-space LI { padding-bottom: 1em; }
   padding: 45px 35px;
 }
 
-.order INPUT[type="tel"] {
+#calculator INPUT[type="tel"] {
   padding: 0.3em 1em;
   color: #FDC116;
   font-size: 25px;
@@ -1029,18 +1029,18 @@ UL.double-space LI { padding-bottom: 1em; }
   margin-bottom: 1.2em;
 }
 
-.order INPUT::-webkit-input-placeholder { color: #FDC116; opacity: 1; }
-.order INPUT:-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 4-18 */
-.order INPUT::-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 19+ */
-.order INPUT:-ms-input-placeholder { color: #FDC116; opacity: 1; } /* IE 10+ */
+#calculator INPUT::-webkit-input-placeholder { color: #FDC116; opacity: 1; }
+#calculator INPUT:-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 4-18 */
+#calculator INPUT::-moz-placeholder { color: #FDC116; opacity: 1; } /* FF 19+ */
+#calculator INPUT:-ms-input-placeholder { color: #FDC116; opacity: 1; } /* IE 10+ */
 
-.order INPUT[type="submit"] {
+#calculator INPUT[type="submit"] {
   margin-top: 1em;
   font-size: 13px;
   line-height: 1em;
 }
 
-.order LABEL {
+#calculator LABEL {
   display: block;
   margin: 1.5em 0 0.5em;
   font-weight: 800;
@@ -1048,7 +1048,7 @@ UL.double-space LI { padding-bottom: 1em; }
   text-align: center;
 }
 
-.order #total { margin: 0; }
+#calculator #total { margin: 0; }
 
 #contact {
   padding: 100px 0;
@@ -1744,6 +1744,95 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
 .blog-single-text .video { margin-bottom: 1.5em; }
 
+.resources {
+  padding: 6.5em 0 4em;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.resources H2 {
+  margin: 1em 0 0;
+  font: 400 30px/1em 'Squada One', cursive;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.resources H2:after {
+  content: "";
+  flex-grow: 100;
+  background: url(../images/yellow-slash.png) repeat-x left center;
+  margin-left: 0.5em;
+}
+
+.resources .resource {
+  margin-top: 5px;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.4em;
+  border-bottom: 3px solid #E1E1E1;
+  position: relative;
+}
+
+.resources .resource H3 {
+  margin: 0 0 0.25em;
+  font: 900 24px/1em 'Proxima Nova';
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: 53%;
+}
+
+.resources .resource H4 {
+  margin: 0;
+  color: #FDC116;
+  font-family: 'Proxima Nova';
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.resources .resource .links {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 47%;
+  text-align: right;
+}
+
+.resources .resource .button {
+  min-width: 270px;
+  box-sizing: border-box;
+  margin-left: 1em;
+  border-color: #000000;
+  padding: 0.7em 1em 0.5em 1.1em;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.resources .resource .button:first-of-type { margin-left: 0; }
+
+.resources .resource .button:hover { background: #000000; }
+
+.resources .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 3em; }
+
+.resources .footer IMG {
+  width: 40%;
+  height: auto;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
+}
+
+.resources .footer > DIV { width: 49.58%; }
+
+.resources .footer > DIV H3 {
+  margin: 0 0 1em 1em;
+  font: normal 35px/1em 'Squada One', cursive;
+  letter-spacing: 0.03em;
+}
+
 
 @media only screen and (min-width: 3000px) {
   #header.sticky {
@@ -1805,6 +1894,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   .portfolio:nth-child(even) .port-text .text { padding: 0 18px 0 54vw; }
 
   .employment .position .button { min-width: 0; }
+
+  .resources .resource .button { min-width: 0; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1826,6 +1917,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #footer-menu LI { padding: 0 1em; }
 
   .employment .position .button { font-size: 1.333vw; }
+
+  .resources .resource .button { font-size: 1.333vw; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1852,7 +1945,7 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
   .company .right { width: 30%; margin-right: 3%; }
 
-  .order LABEL { font-size: 2.5vw; }
+  #calculator LABEL { font-size: 2.5vw; }
 
   #contact > DIV { width: 80%; }
 
@@ -2019,7 +2112,7 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
   .order .left { width: 45%; }
   
-  .order LABEL { font-size: 2.3vw; }
+  #calculator LABEL { font-size: 2.3vw; }
 
   #contact > DIV { width: 96%; }
 
@@ -2097,6 +2190,15 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   .employment .position H3 { width: 100%; }
   .employment .position .links { position: static; width: 100%; margin-top: 1.25em; text-align: left; }
   .employment .position .button { min-width: 270px; font-size: 14px; }
+
+  .resources .resource H3 { width: 100%; }
+  .resources .resource .links { position: static; width: 100%; margin-top: 1.25em; text-align: left; }
+  .resources .resource .button { min-width: 270px; font-size: 14px; }
+
+  .resources .footer { flex-direction: column-reverse; }
+  .resources .footer IMG { width: 100%; margin-top: 3em; }
+  .resources .footer > DIV { width: 100%; }
+  .resources .footer #calculator LABEL { font-size: 4.2vw; }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2217,7 +2319,7 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
   .order .button { margin-top: 1em; }
 
-  .order LABEL { font-size: 4.2vw; }
+  .order #calculator LABEL { font-size: 4.2vw; }
 
   #contact { padding: 75px 0; }
 
@@ -2247,6 +2349,10 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   .employment .position .links { max-width: 540px; }
   .employment .position .button { margin: 1em 0 0; }
   .employment .position .button:first-of-type { margin: 0; }
+
+  .resources .resource .links { max-width: 540px; }
+  .resources .resource .button { margin: 1em 0 0; }
+  .resources .resource .button:first-of-type { margin: 0; }
 }
 
 @media only screen and (max-width: 480px) {
