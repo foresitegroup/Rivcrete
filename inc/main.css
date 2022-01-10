@@ -313,7 +313,7 @@ UL.double-space LI { padding-bottom: 1em; }
   left: -1em;
   transform: none;
   padding: 0.5em 0 1em;
-  font-size: 80%;
+  font-size: 75%;
   background: #000000;
 }
 
@@ -1833,6 +1833,59 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   letter-spacing: 0.03em;
 }
 
+/* ENVIRONMENTAL */
+.environmental {
+  padding: 6.5em 0 4em;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.environmental .alignright {
+  float: right;
+  margin-left: 10%;
+  width: 40%;
+  height: auto;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.35);
+}
+
+.environmental H2 {
+  margin: 0 0 0.25em;
+  font: 400 43px/1em 'Squada One', cursive;
+  letter-spacing: 0;
+}
+
+.environmental .col2 { columns: 2; column-gap: 15%; }
+
+.environmental .col2 P { margin: 0 0 1.5em; }
+
+.environmental H3 {
+  margin: 1em 0 0.25em;
+  font: 400 30px/1em 'Squada One', cursive;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.environmental H3:after {
+  content: "";
+  flex-grow: 100;
+  background: url(../images/yellow-slash.png) repeat-x left center;
+  margin-left: 0.5em;
+}
+
+.environmental .cw { display: flex; justify-content: space-between; align-items: flex-start; padding: 2em 2%; }
+
+.environmental .cw IMG { width: 40%; }
+
+.environmental .cw > DIV { width: 52.5%; }
+
+.environmental H4 {
+  margin: 0 0 0.25em;
+  font: 400 41px/1em 'Squada One', cursive;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 
 @media only screen and (min-width: 3000px) {
   #header.sticky {
@@ -2219,6 +2272,12 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #application INPUT[name^="fatalities_accident"],
   #application INPUT[name^="injuries_accident"],
   #application .five-col .radio { width: 100% !important; }
+  
+  .environmental .alignright { float: none; margin: 0 0 1em; width: 100%; }
+  .environmental .col2 { columns: 1; }
+  .environmental .cw { flex-direction: column-reverse; padding: 2em 0; }
+  .environmental .cw IMG { width: 100%; margin-top: 2em; }
+  .environmental .cw > DIV { width: 100%; }
 }
 
 @media only screen and (max-width: 600px) {
