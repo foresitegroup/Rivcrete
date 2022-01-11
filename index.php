@@ -35,10 +35,10 @@ include "header.php";
       <img src="images/home-slider7.jpg" alt="">
       <img src="images/home-slider6.jpg" alt="">
       <img src="images/home-slider1.jpg" alt="">
-      <img src="images/home-slider2.jpg" alt="">
-      <img src="images/home-slider3.jpg" alt="">
+      <img src="images/home-slider-ascent.jpg" alt="">
+      <img src="images/home-slider-837.jpg" alt="">
       <img src="images/home-slider4.jpg" alt="">
-      <img src="images/home-slider5.jpg" alt="">
+      <img src="images/home-slider-837b.jpg" alt="">
 
       <span id="p-pager"></span>
     </div>
