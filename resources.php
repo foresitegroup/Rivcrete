@@ -28,7 +28,7 @@ $FooterImages = "no";
     <h4>Rules and Guidlines</h4>
 
     <div class="links">
-      <a href="pdf/Customer_Handbook.pdf<?php echo "?".filemtime("pdf/Customer_Handbook.pdf"); ?>" download class="button">Download PDF</a>
+      <a href="pdf/Customer_Handbook.pdf<?php echo "?".filemtime("pdf/Customer_Handbook.pdf"); ?>" class="button">View PDF</a>
     </div>
   </div>
 
@@ -37,7 +37,7 @@ $FooterImages = "no";
     <h4>Recommendtions and Guidelines</h4>
 
     <div class="links">
-      <a href="pdf/QC_Project_Procedures.pdf<?php echo "?".filemtime("pdf/QC_Project_Procedures.pdf"); ?>" download class="button">Download PDF</a>
+      <a href="pdf/QC_Project_Procedures.pdf<?php echo "?".filemtime("pdf/QC_Project_Procedures.pdf"); ?>" class="button">View PDF</a>
     </div>
   </div>
 
