@@ -35,7 +35,8 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery.cycle2.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("a[href^='http'], a[href$='.pdf']").not("[href*='" + window.location.host + "']").attr('target','_blank');
+        $("a[href^='http']").not("[href*='" + window.location.host + "']").prop('target','new');
+        $("a[href*='.pdf']").prop('target', 'new');
 
         jQuery("#header-spacer").waypoint(function(direction) {
           jQuery("#header").toggleClass("sticky", direction == "down");
