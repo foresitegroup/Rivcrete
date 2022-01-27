@@ -21,7 +21,7 @@ $FooterImages = "no";
   <div style="clear: both;"></div>
   <br>
 
-  <h2>Carbon Cure</h2>
+  <h3>Carbon Cure</h3>
   <div class="col2">
     <p>Concrete is the most used man-made material on earth and is second only to consumption of water.  Concrete itself has a minimal impact on the environment.  However, the main ingredient used to make concrete is called cement which emits Co2 during its production process.  Roughly every ton of cement that is produced releases .90 tons of carbon into the atmosphere.  The cement industry is undergoing a major transition in cement production reducing their emissions by almost 10%.   Coinciding with this change is the introduction of a cutting-edge technology called Carbon Cure.</p>
 
@@ -52,15 +52,10 @@ $FooterImages = "no";
       Returned concrete that is not used to make concrete block is dumped into large piles that will eventually be crushed and converted into road base.  This material is used to establish a durable surface for eventual roads and streets that our vehicles travel on.
     </div>
   </div> <!-- /.cw -->
-
-  <div class="cw">
-    <img src="images/clean-burn.jpg" alt="">
-
-    <div>
-      <h4>Clean Burn</h4>
-      Concrete trucks require frequent oil changes to run efficiently and help prevent mechanical breakdowns.  The amount of oil required to maintain our fleet is significant and burdensome to store and dispose.  To address this issue Riv/Crete invested in a system called Clean Burn.  The Clean Burn system uses "old" oil as its fuel source for heating our mechanic's garage.  Throughout the year we store the used oil in an environmentally safe container.  During the winter months we then tap into this fuel source to keep our mechanics warm while recycling the "old" oil as our fuel source.
-    </div>
-  </div> <!-- /.cw -->
+  
+  <h3>Clean Burn</h3>
+  <img src="images/clean-burn.jpg" alt="" class="alignright">
+  Concrete trucks require frequent oil changes to run efficiently and help prevent mechanical breakdowns.  The amount of oil required to maintain our fleet is significant and burdensome to store and dispose.  To address this issue Riv/Crete invested in a system called Clean Burn.  The Clean Burn system uses "old" oil as its fuel source for heating our mechanic's garage.  Throughout the year we store the used oil in an environmentally safe container.  During the winter months we then tap into this fuel source to keep our mechanics warm while recycling the "old" oil as our fuel source.
 </div> <!-- .environmental -->
 
 <?php include "footer.php"; ?>
