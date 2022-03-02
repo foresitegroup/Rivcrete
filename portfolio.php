@@ -19,6 +19,60 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>St. Camillus</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The completion of the East Residence Tower for the St. Camillus facility is located across the street from the Milwaukee County Zoo. The new buildings features include fine dining restaurant, pub & deli, as well as an art gallery, theater, and wellness center.  The 15-story wing shaped structure also includes another 2 stories of below ground parking for residence and staff.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-st-cams.jpg);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Waste Management</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The recently completed Waste Management recycling facility located in Germantown, WI illustrates the importance of ready mixed concrete. The owners considered asphalt but decided concrete was the only choice with the extreme weight of the recycling equipment that was being used.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-waste-management.jpg);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Fox Run</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        "As the owner and developer of our own buildings we know using an ICF system is a far superior construction method.  It might surprise people but the upfront cost between wood and ICF is virtually zero. After you factor in the cost savings it's an easy decision," stated owner Ryan Bedford.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-fox-run.jpg);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>Froedtert Parking</h3>
     </div>
 
