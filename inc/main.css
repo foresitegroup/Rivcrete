@@ -1744,6 +1744,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
 .blog-single-text .video { margin-bottom: 1.5em; }
 
+.blog-single-text .aligncenter { display: block; margin: 0 auto 1.4em; }
+
 .resources {
   padding: 6.5em 0 4em;
   font-size: 20px;
