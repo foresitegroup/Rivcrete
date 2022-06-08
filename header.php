@@ -45,14 +45,22 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
       });
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics [This will stop working 7/1/23] -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156459379-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-156459379-1');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1PR42FW2B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G1PR42FW2B');
     </script>
 
   </head>
