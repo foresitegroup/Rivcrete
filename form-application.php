@@ -137,9 +137,9 @@ if ($responsekeys->success) {
     if ($employer == "yes") $Message .= "\n";
     // END Employment Record section
 
-    if ($_POST['authorization'] != "") $Message .= $_POST['authorization']."\n\n";
+    if (isset($_POST['authorization']) && $_POST['authorization'] != "") $Message .= $_POST['authorization']."\n\n";
 
-    if ($_POST['certify'] != "") $Message .= $_POST['certify']."\n\n";
+    if (isset($_POST['certify']) && $_POST['certify'] != "") $Message .= $_POST['certify']."\n\n";
 
     $Message = stripslashes($Message);
 
