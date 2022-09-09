@@ -21,12 +21,14 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
-    <meta name="description" content="">
+    <meta name="description" content="Riv/Crete is a family owned company in the Milwaukee area that delivers concrete at the highest levels of quality and standards.">
     <meta name="keywords" content="">
 
     <?php if ($TopDir != "") wp_head(); ?>
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Squada+One">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/icons.css?<?php if ($TopDir == "") echo filemtime('inc/icons.css'); ?>">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php if ($TopDir == "") echo filemtime('inc/main.css'); ?>">
 

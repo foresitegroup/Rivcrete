@@ -14,6 +14,7 @@ font-family: 'Squada One', cursive;
        url('fonts/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +27,7 @@ font-family: 'Squada One', cursive;
        url('fonts/ProximaNovaExtrabold.svg#MarkSimonsonProximaNovaExtrabold') format('svg');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -38,6 +40,7 @@ font-family: 'Squada One', cursive;
        url('fonts/ProximaNovaBlack.svg#MarkSimonsonProximaNovaBlack') format('svg');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 BODY {
