@@ -1,12 +1,12 @@
 <?php
-$PageTitle = "Products &amp; Services";
+$PageTitle = "Readymix Concrete Delivery Milwaukee, WI | Riv/Crete";
 include "header.php";
 ?>
 
 <div class="page-header">
   <div class="site-width">
     <div class="text">
-      <h1>Riv/Crete delivers concrete at the highest levels of quality and standards.</h1>
+      <h1>The Readymix Concrete Delivery Milwaukee, WI Residents Love</h1>
 
       <h2>PRODUCTS &amp; SERVICES</h2>
     </div>
@@ -16,7 +16,10 @@ include "header.php";
 </div>
 
 <div class="site-width products">
-  <h3>CONCRETE PRODUCTS</h3>
+  <h3>TURN TO RIV/CONCRETE FOR A TRUSTED CONCRETE SUPPLIER</h3>
+  Are you looking to reduce construction costs and time? There's no better way to have faster, more convenient results than with our Readymix concrete supplies. With our delivery, you have the freedom to custom order your concrete to perfectly match your project requirements or personal needs. It's as simple as placing your order, setting up a drop-off time and date, and starting your project right at the time of delivery! Are you looking for quality Readymix concrete delivery Milwaukee, WI locals can recommend? If so, turn to the professionals at Riv/Crete today!<br>
+  <br>
+
   <div class="left">
     <ul class="slash double-space">
       <li>Bagged goods (cement, mortar mixes, patching and restoration materials)</li>
@@ -59,7 +62,7 @@ include "header.php";
   </div>
 
   <div style="clear: both;"></div>
-  
+
   <h3>DECORATIVE PRODUCTS</h3>
   <div class="left">
     Costing a third of most natural materials, decorative concrete products have become the affordable and attractive way to complement projects.<br>
@@ -71,7 +74,7 @@ include "header.php";
     <br>
 
     <h4>DECORATIVE CONCRETE STAMPS</h4>
-    Stamp and Skin rentals are available, please call call us for more information or to schedule a rental: (414) 455-6070
+    Stamp and Skin rentals are available, please call call us for more information or to schedule a rental: (833) 814-5459
   </div>
 
   <div class="right shift">

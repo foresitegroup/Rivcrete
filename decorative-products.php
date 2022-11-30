@@ -15,7 +15,7 @@ include "header.php";
 
       <h2>STAMP &amp; SKIN RENTALS ARE AVAILABLE AT:</h2>
 
-      <h3>(414) 455-6070</h3>
+      <h3>(833) 814-5459</h3>
     </div>
 
     <div class="image" style="background-image: url(images/header-decorative.jpg);">

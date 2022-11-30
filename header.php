@@ -17,11 +17,11 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>Riv/Crete<?php if (isset($PageTitle)) echo " | " . $PageTitle; ?></title>
+    <title>Concrete Delivery Milwaukee, WI | Waukesha, WI | Riv/Crete<?php if (isset($PageTitle)) echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
-    <meta name="description" content="Riv/Crete is a family owned company in the Milwaukee area that delivers concrete at the highest levels of quality and standards.">
+    <meta name="description" content="Riv/Crete is a family-owned company that provides concrete delivery Waukesha, WI residents love at the highest levels of quality and standards.">
     <meta name="keywords" content="">
 
     <?php if ($TopDir != "") wp_head(); ?>
@@ -64,7 +64,24 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
       gtag('js', new Date());
       gtag('config', 'G-G1PR42FW2B');
     </script>
-
+    
+    <script>{
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Riv/Crete Ready Mix",
+      "image": "https://rivcrete.com/images/logo.png",
+      "@id": "",
+      "url": "https://rivcrete.com/",
+      "telephone": "(414) 455-6070",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2761 S Chase Ave",
+        "addressLocality": "Milwaukee",
+        "addressRegion": "WI",
+        "postalCode": "53217",
+        "addressCountry": "US"
+      }  
+    }</script>
   </head>
   <body <?php if ($TopDir != "") body_class(); ?>>
 
@@ -94,7 +111,7 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
             </li>
             <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
-            <li class="phone">(414) 455-6070</li>
+            <li class="phone">(833) 814-5459</li>
           </ul>
         </div>
       </div>
