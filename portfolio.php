@@ -19,6 +19,42 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>Komatsu Manufacturing</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        Komatsu Manufacturing recently completed its brand new 600,000 square foot office and manufacturing facility in the Harbor District of Milwaukee.  This transformative project now has over 1,000 employees working in this incredible facility.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-komatsu.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Waukesha Water</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        Waukesha Water Utility Booster includes two 8.6 million-gallon reservoirs and a new one-million-gallon composite elevated water tower that stands approximately 160 feet tall. This project was completed 3 months ahead of schedule ensuring the residents of Waukesha County will receive an abundance of clean usable water.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/portfolio-waukesha-water.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>St. Camillus</h3>
     </div>
 
