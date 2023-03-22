@@ -48,7 +48,6 @@ src="https://www.facebook.com/tr?id=139642346563917&ev=PageView&noscript=1"
 
   <div class="position">
     <h3>Dispatcher / Order Taker</h3>
-    Posted 1/20/21<br>
     <input type="checkbox" id="toggle2"><label for="toggle2">Job Details</label>
 
     <div class="details">
@@ -80,7 +79,6 @@ src="https://www.facebook.com/tr?id=139642346563917&ev=PageView&noscript=1"
 
   <div class="position">
     <h3>Ready Mix Driver</h3>
-    Posted 1/21/20<br>
     <input type="checkbox" id="toggle3"><label for="toggle3">Job Details</label>
 
     <div class="details">
