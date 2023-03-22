@@ -111,7 +111,7 @@ $FooterImage = (isset($FooterImage)) ? $FooterImage : "";
             </li>
             <li><a href="<?php echo $TopDir; ?>employment.php">Employment</a></li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
-            <li class="phone">(833) 814-5459</li>
+            <li class="phone">(414) 455-6070</li>
           </ul>
         </div>
       </div>

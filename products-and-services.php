@@ -74,7 +74,7 @@ include "header.php";
     <br>
 
     <h4>DECORATIVE CONCRETE STAMPS</h4>
-    Stamp and Skin rentals are available, please call call us for more information or to schedule a rental: (833) 814-5459
+    Stamp and Skin rentals are available, please call call us for more information or to schedule a rental: (414) 455-6070
   </div>
 
   <div class="right shift">

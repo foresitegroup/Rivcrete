@@ -20,7 +20,7 @@ include "header.php";
 
 <div class="site-width order">
   <div class="left">
-    <h3>(833) 814-5459</h3>
+    <h3>(414) 455-6070</h3>
 
     <h4>PLEASE HAVE READY:</h4>
     <ol>
@@ -143,7 +143,7 @@ unset($_SESSION['feedback']);
 
 <form action="form-contact.php" method="POST" id="contact">
   <div>
-    <h5>Questions or a Request? Fill out the form below or contact us directly at:<br><br><?php email("contactus@rivcrete.com"); ?> or (833) 814-5459</h5>
+    <h5>Questions or a Request? Fill out the form below or contact us directly at:<br><br><?php email("contactus@rivcrete.com"); ?> or (414) 455-6070</h5>
 
     <input type="text" name="<?php echo md5("name" . $ip . $salt . $timestamp); ?>" id="name" placeholder="Name">
 
