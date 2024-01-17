@@ -41,6 +41,15 @@ $FooterImages = "no";
     </div>
   </div>
 
+  <div class="resource">
+    <h3>Ready Mix Concrete</h3>
+    <h4>Safety Data Sheet</h4>
+
+    <div class="links">
+      <a href="pdf/Ready_Mix_Concrete_SDS.pdf<?php echo "?".filemtime("pdf/Ready_Mix_Concrete_SDS.pdf"); ?>" class="button">View PDF</a>
+    </div>
+  </div>
+
   <div class="footer">
     <img src="images/resources.jpg" alt="">
 
