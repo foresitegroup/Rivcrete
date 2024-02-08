@@ -4,8 +4,8 @@ include "header.php";
 ?>
 
 <div id="home-banner">
-  <video playsinline autoplay muted loop poster="images/home-banner.jpg">
-    <source src="images/home-banner.mp4" type="video/mp4">
+  <video playsinline autoplay muted loop poster="images/home-banner2024.webp">
+    <source src="images/home-banner2024.mp4" type="video/mp4">
   </video>
 
   <div class="site-width">
