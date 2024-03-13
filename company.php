@@ -48,16 +48,16 @@ include "header.php";
     <div class="locations">
       <h4>LOCATIONS</h4><br>
 
-      <h5>Riv/Crete Ready Mix</h5>
-      2761 South Chase Ave.<br>
-      Milwaukee, WI 53217<br>
+      <h5>Riv/Crete Ready Mix<br>Main Office</h5>
+      12005 West Hampton Ave.<br>
+      Milwaukee, WI 53225<br>
       <strong class="yellowtext">P:</strong> (414) 455-6070<br>
       <strong class="yellowtext">F:</strong> (414) 455-6069<br>
       <br>
 
       <h5>Riv/Crete Ready Mix</h5>
-      12005 West Hampton Ave.<br>
-      Milwaukee, WI 53225<br>
+      2761 South Chase Ave.<br>
+      Milwaukee, WI 53217<br>
       <strong class="yellowtext">P:</strong> (414) 455-6070<br>
       <strong class="yellowtext">F:</strong> (414) 455-6069<br>
       <br>
