@@ -19,6 +19,44 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>UWM Chemistry</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        University of Wisconsin Milwaukee recently completed its new 118 Million dollar Chemistry Building.  This new facility will be a home for the UWM's chemistry department and serve as a gateway to all of the university's science, technology, engineering and mathematics (STEM) departments and buildings.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/uwm-chemistry1.webp);"></div>
+      <div style="background-image: url(images/uwm-chemistry2.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>The Trade: Autograph Hotel</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The nine-story all concrete post tension structure is redefining how new hotels are being built in the City of Milwaukee.  This new hotel was designed to showcase the history and culture of Milwaukee.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/the-trade1.webp);"></div>
+      <div style="background-image: url(images/the-trade2.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>Komatsu Manufacturing</h3>
     </div>
 
