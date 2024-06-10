@@ -1197,6 +1197,8 @@ INPUT.alert:focus:-ms-input-placeholder { color: transparent; }
   margin-bottom: 2em;
 }
 
+.fineprint { margin-top: 3rem; font-size: 60%; line-height: 1.2; }
+
 .decorative {
   padding: 3em 0 0;
   font: normal 40px/1em 'Squada One', cursive;

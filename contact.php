@@ -34,7 +34,7 @@ include "header.php";
       <li>The date and time of delivery</li>
       <li>Payment terms</li>
     </ol>
-    
+
     <script type="text/javascript" src="inc/jquery.scrollTo.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -180,6 +180,15 @@ unset($_SESSION['feedback']);
     <div id="form-messages"><?php echo $feedback; ?></div>
 
     <input type="submit" name="submit" value="SUBMIT MESSAGE">
+
+    <div class="fineprint">
+      <strong>Disclaimer</strong><br>
+      By providing my phone number to RivCrete, I agree and acknowledge that RivCrete may send text messages to my wireless phone number for any purpose. Message and data rates may apply. Message frequency will vary, and you will be able to opt-out by replying "STOP". For more information on how your data will be handled, please see our privacy policy below:<br>
+      <br>
+
+      <strong>Privacy Policy</strong><br>
+      No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+    </div> <!-- /.fineprint -->
   </div>
 </form>
 
