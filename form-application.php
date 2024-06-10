@@ -98,8 +98,8 @@ if ($responsekeys->success) {
     if ($_POST['employer_city1'] != "" || $_POST['employer_state1'] != "" || $_POST['employer_zip1']) $Message .= "\n";
     if ($_POST['employer_leaving1'] != "") $Message .= "Reasons for Leaving: ".$_POST['employer_leaving1']."\n";
     if ($_POST['employer_gaps1'] != "") $Message .= "Any gaps in employment and/or unemployment must be explained.\n".$_POST['employer_gaps1']."\n";
-    if ($_POST['employer_fmcsr1'] != "") $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr1']."\n";
-    if ($_POST['employer_cfr1'] != "") $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr1']."\n";
+    if (isset($_POST['employer_fmcsr1'])) $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr1']."\n";
+    if (isset($_POST['employer_cfr1'])) $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr1']."\n";
     $Message .= "\n";
 
     if ($_POST['employer_name2'] != "") $Message .= "Second Last Employer Name: ".$_POST['employer_name2']."\n";
@@ -113,8 +113,8 @@ if ($responsekeys->success) {
     if ($_POST['employer_city2'] != "" || $_POST['employer_state2'] != "" || $_POST['employer_zip2']) $Message .= "\n";
     if ($_POST['employer_leaving2'] != "") $Message .= "Reasons for Leaving: ".$_POST['employer_leaving2']."\n";
     if ($_POST['employer_gaps2'] != "") $Message .= "Any gaps in employment and/or unemployment must be explained.\n".$_POST['employer_gaps2']."\n";
-    if ($_POST['employer_fmcsr2'] != "") $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr2']."\n";
-    if ($_POST['employer_cfr2'] != "") $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr2']."\n";
+    if (isset($_POST['employer_fmcsr2'])) $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr2']."\n";
+    if (isset($_POST['employer_cfr2'])) $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr2']."\n";
     $Message .= "\n";
 
     if ($_POST['employer_name3'] != "") $Message .= "Third Last Employer Name: ".$_POST['employer_name3']."\n";
@@ -128,8 +128,8 @@ if ($responsekeys->success) {
     if ($_POST['employer_city3'] != "" || $_POST['employer_state3'] != "" || $_POST['employer_zip3']) $Message .= "\n";
     if ($_POST['employer_leaving3'] != "") $Message .= "Reasons for Leaving: ".$_POST['employer_leaving3']."\n";
     if ($_POST['employer_gaps3'] != "") $Message .= "Any gaps in employment and/or unemployment must be explained.\n".$_POST['employer_gaps3']."\n";
-    if ($_POST['employer_fmcsr3'] != "") $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr3']."\n";
-    if ($_POST['employer_cfr3'] != "") $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr3']."\n";
+    if (isset($_POST['employer_fmcsr3'])) $Message .= "Were you subject to the Federal Motor Carrier Safety Regulations (FMCSRs) while employed by the previous employer? ".$_POST['employer_fmcsr3']."\n";
+    if (isset($_POST['employer_cfr3'])) $Message .= "Was the previous job position designated as a safety sensitive function in any DOT regulated mode, subject to alcohol and controlled substances testing requirements as required by 49 CFR Part 40? ".$_POST['employer_cfr3']."\n";
     $Message .= "\n";
 
     if ($_POST['employer_additional'] != "") $Message .= "Additional space if needed\n".$_POST['employer_additional']."\n";

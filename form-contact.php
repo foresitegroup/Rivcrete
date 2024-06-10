@@ -3,7 +3,7 @@ session_start();
 
 $salt = "RivcreteContactForm";
 
-if ($_POST['confirmationCAP'] == "") {
+if (!isset($_POST['confirmationCAP'])) {
   if (
       $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
       $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
