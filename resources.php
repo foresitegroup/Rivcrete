@@ -51,7 +51,7 @@ $FooterImages = "no";
   </div>
 
   <div class="footer">
-    <img src="images/resources.jpg" alt="">
+    <img src="images/resources.webp" alt="" width="1000" height="667">
 
     <div>
       <script type='text/javascript'>

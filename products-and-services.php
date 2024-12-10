@@ -11,7 +11,7 @@ include "header.php";
       <h2>PRODUCTS &amp; SERVICES</h2>
     </div>
 
-    <div class="image" style="background-image: url(images/header-products.jpg);"></div>
+    <div class="image" style="background-image: url(images/header-products.webp);"></div>
   </div>
 </div>
 

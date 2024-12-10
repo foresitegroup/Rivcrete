@@ -32,7 +32,7 @@
     <div id="footer-images" class="cf">
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer2.jpg);"></div>
-      <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer3.jpg);"></div>
+      <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer3.webp);"></div>
     </div>
     <?php } ?>
 

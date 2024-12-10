@@ -15,7 +15,7 @@ $FooterImages = "no";
 </div>
 
 <div class="site-width environmental">
-  <img src="images/environmental1.jpg" alt="" class="alignright">
+  <img src="images/environmental1.webp" alt="" width="1000" height="667" class="alignright">
   Riv/Crete Ready Mix is a family-owned business based in Milwaukee, Wisconsin.  Our company is focused on providing our customers with the best service and highest quality concrete in the Milwaukee market.  Along with that focus we also believe our company has a responsibility is to minimize our environmental impact as best we can. Here are just a few of the impacts we are making.
 
   <div style="clear: both;"></div>

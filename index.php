@@ -30,15 +30,17 @@ include "header.php";
 
 <div class="site-width home-products">
   <div class="slides">
-    <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
-      <img src="images/home-slider-award2.png" alt="">
-      <img src="images/home-slider7.jpg" alt="">
-      <img src="images/home-slider6.jpg" alt="">
-      <img src="images/home-slider1.jpg" alt="">
-      <img src="images/home-slider-ascent.jpg" alt="">
-      <img src="images/home-slider-837.jpg" alt="">
-      <img src="images/home-slider4.jpg" alt="">
-      <img src="images/home-slider-837b.jpg" alt="">
+    <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>{{slideNum}}</a>">
+      <img src="images/home-slider-award2.png" alt="" width="1000" height="667">
+      <img src="images/home-slider7.jpg" alt="" width="1000" height="667">
+      <img src="images/home-slider6.jpg" alt="" width="1000" height="667">
+      <img src="images/home-slider-ascent.jpg" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412a.webp" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412b.webp" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412c.webp" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412d.webp" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412e.webp" alt="" width="1000" height="667">
+      <img src="images/home-slider-202412f.webp" alt="" width="1000" height="667">
 
       <span id="p-pager"></span>
     </div>

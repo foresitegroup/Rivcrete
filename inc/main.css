@@ -1507,7 +1507,7 @@ INPUT.alert:focus:-ms-input-placeholder { color: transparent; }
 }
 
 #employment-footer {
-  background: url(../images/employment-footer.jpg) no-repeat center;
+  background: url(../images/employment-footer.webp) no-repeat center;
   background-size: cover;
 }
 
