@@ -1254,20 +1254,25 @@ INPUT.alert:focus:-ms-input-placeholder { color: transparent; }
 
 .portfolio:nth-child(even) .port-title:after { left: 55%; }
 
-.portfolio .port-title H3 {
+.portfolio .port-title H3 { 
   display: inline-block;
   margin: 0;
+  width: 42%;
   position: relative;
   left: calc((100% - 1200px) / 2);
   font-size: 54px;
   line-height: 1em;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
+
+.portfolio .port-title H3.long { font-size: 52px; letter-spacing: 0.01em; }
 
 .portfolio:nth-child(even) .port-title H3,
 .portfolio:nth-child(even) .port-title H4 {
   left: calc((100% + 1200px) / 2);
   transform: translateX(-100%);
+  text-align: right;
 }
 
 .portfolio .port-title H4 {
@@ -1943,6 +1948,7 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   #home-about .image { right: 2%; width: 46%; }
 
   .portfolio .port-title H3, .portfolio .port-title H4 { left: 2%; }
+  .portfolio .port-title H3 { width: 49%; }
   .portfolio:nth-child(even) .port-title H3, .portfolio:nth-child(even) .port-title H4 { left: 98%; }
   .portfolio .port-title H4 { font-size: 0.98vw; }
 
@@ -1964,7 +1970,8 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   .company .right { width: 24%; }
   
   .portfolio .port-title { padding: 2.27vw 0 3.63vw; }
-  .portfolio .port-title H3 { font-size: 4.8vw; }
+  .portfolio .port-title H3,
+  .portfolio .port-title H3.long { font-size: 4.8vw; letter-spacing: 0.03em; }
 
   .portfolio .port-text:before { padding-bottom: 12vw; }
 }
@@ -2189,13 +2196,14 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
   .portfolio .port-title:after { width: 66%; }
   .portfolio:nth-child(even) .port-title:after { left: 0; }
 
-  .portfolio .port-title H3 { font-size: 6.5vw; }
+  .portfolio .port-title H3, .portfolio .port-title H3.long { width: 66%; font-size: 6.5vw; }
   .portfolio .port-title H4 { font-size: 1.35vw; }
 
   .portfolio:nth-child(even) .port-title H3,
   .portfolio:nth-child(even) .port-title H4 {
     left: 2%;
     transform: none;
+    text-align: left;
   }
 
   .portfolio:nth-child(even) .port-title H4 { padding-left: 0; padding-right: 1em; }
@@ -2463,7 +2471,7 @@ LABEL[for="authorization"]:before, LABEL[for="certify"]:before { left: 0.5em; }
 
   .portfolio .port-title:after { width: 78%; }
 
-  .portfolio .port-title H3 { font-size: 7.8vw; }
+  .portfolio .port-title H3, .portfolio .port-title H3.long { font-size: 7.8vw; }
   .portfolio .port-title H4 { font-size: 1.7vw; }
 
   .portfolio .port-text { margin-top: 10vw; }

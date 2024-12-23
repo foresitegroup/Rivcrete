@@ -19,6 +19,60 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>The Couture</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        Selected as the top commercial project in the state of Wisconsin is the Couture High Rise Apartment tower. The 537-foot, 47-story high-rise became the state of Wisconsin's tallest residential building upon completed in 2024, and features 322 high-end apartments, 50,000 square feet of restaurant and retail space, and an 1,100-space parking structure with hundreds of public parking spaces.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/the-couture1.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Davidson Park</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        Opened in June 2024, Davidson Park is a 4.8 acre public park on Harley-Davidson's corporate campus in Milwaukee's Near West Side neighborhood. Developed by the Harley-Davidson Foundation in response to community input, this urban park features unique design elements, natural beauty, and free amenities for daily enjoyment and special events.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/davidson-park1.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3 class="long">Waukesha Parade Memorial</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The memorial honoring the Waukesha Christmas Parade Tragedy victims was held on November 21, 2024 at Grede Park. The memorial has six concrete ribbons and benches to honor the six victims. The Waukesha Parade Memorial was born out of resilience, community strength, and the unwavering commitment to remember those who were lost and support those who survived.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/waukesha-parade-memorial1.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>UWM Chemistry</h3>
     </div>
 
@@ -38,7 +92,7 @@ include "header.php";
 
   <div class="portfolio">
     <div class="port-title">
-      <h3>The Trade: Autograph Hotel</h3>
+      <h3 class="long">The Trade: Autograph Hotel</h3>
     </div>
 
     <div class="port-text">
