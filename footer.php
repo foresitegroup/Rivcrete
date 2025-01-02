@@ -1,20 +1,40 @@
     <div id="testimonials">
       <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-auto-height="container" data-cycle-timeout="7000" data-cycle-speed="1000" data-cycle-pager="#t-pager" data-cycle-pager-template="<a href=#></a>">
         <div>
+          &ldquo;You guys were outstanding! Great concrete, great service, great communication.  We could not have asked for a better ready-mix company to work with.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Chuck Vitale, Owner of Vee Jay Construction</div>
+        </div>
+        <div>
+          &ldquo;Congratulations you guys have done an incredible job of improving your company's safety programs your new MOD is really an impressive accomplishment.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Brad Hallmark, Vizance Insurance</div>
+        </div>
+        <div>
+          &ldquo;In my opinion, I think concrete buildings are the best buildings in the world.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Rick Barrett, Developer of "The Couture"</div>
+        </div>
+        <div>
+          &ldquo;I very much appreciated all the help your team gave me this past summer and wanted to let them know how awesome of a job they did with as much as I had going on.  We poured multiple times every day.   With all the projects going on we worked together and don't think I missed one deadline which is amazing.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Chris Zorzin, Findorff Superintendent</div>
+        </div>
+        <div>
+          &ldquo;Thank you for all of the time you and your team took last week. We've toured a bunch of stuff this past semester, but touring Rivcrete was by far my favorite. It's companies like yours that help the CLC club succeed and make me excited to graduate college and start my career in the construction industry!&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Chandler Baures, Findorff P.M.</div>
+        </div>
+        <div>
+          &ldquo;I'm not aware of any other company in the region that has gone to this extent to reduce their carbon impact more than Riv/Crete Ready Mix.  They are the clear-cut leaders in their industry.&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Colton Flint, Command Alkon</div>
+        </div>
+        <div>
+          &ldquo;I would like to thank you for hosting MSOE: ASCE, ITE, and Pavement Design course. Everyone was extremely happy with the tour, and I cannot thank you enough for the hospitality and kindness that all the tour guides displayed. It was such a pleasure to learn and meet you all and I appreciate the patience when answering all our questions. It was such a cool experience!&rdquo;
+          <div class="attr"><span class="yellowtext">/</span> Kris Banse, Past ASCE Student President</div>
+        </div>
+        <div>
           &ldquo;The credit is due to the Riv-Crete team for supplying in spec material on a timely basis all night even as ice rates were modified throughout the pour to keep temps where they needed to be. WisDOT IA rep who was on site commented that he had seen less than a dozen deck pours of that size have in spec material the entire pour.&rdquo;
           <div class="attr"><span class="yellowtext">/</span> Philip Meinholz, P.E. Structural Engineer</div>
         </div>
         <div>
-          &ldquo;A company that knows its customers as well as it knows the products that it sells.&rdquo;
-          <div class="attr"><span class="yellowtext">/</span> Gary Wallis, St. Mary's Cement</div>
-        </div>
-        <div>
           &ldquo;Riv/Crete Ready Mix is a valued producer member of the Wisconsin Ready Mixed Concrete Association (WRMCA). Nicholas Rivecca is a respected past president of the WRMCA.&rdquo;
           <div class="attr"><span class="yellowtext">/</span> Cherish Schween, Executive Director of WRMCA</div>
-        </div>
-        <div>
-          &ldquo;Riv/Crete Ready Mix brings to the concrete industry an extremely knowledgeable staff of concrete experts.  Using state of the art concrete plants and admixtures, Riv/Crete Ready Mix has the ability to produce some of the most technical and advanced concrete in the marketplace.&rdquo;
-          <div class="attr"><span class="yellowtext">/</span> Paul Piekarski, Sales Rep. Sika Corporation</div>
         </div>
 
         <span id="t-pager"></span>
@@ -27,7 +47,7 @@
       <a href="<?php echo $TopDir; ?>employment.php">SEE OPEN POSITIONS</a>
     </div>
     <?php } ?>
-    
+
     <?php if (!isset($FooterImages)) { ?>
     <div id="footer-images" class="cf">
       <div style="background-image: url(<?php echo $TopDir; ?>images/<?php echo $FooterImage; ?>footer1.jpg);"></div>
