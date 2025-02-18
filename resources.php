@@ -50,6 +50,15 @@ $FooterImages = "no";
     </div>
   </div>
 
+  <div class="resource">
+    <h3>Business Credit Application</h3>
+    <h4>&nbsp;</h4>
+
+    <div class="links">
+      <a href="pdf/RIVCRETE_Business_Credit_Application.pdf<?php echo "?".filemtime("pdf/RIVCRETE_Business_Credit_Application.pdf"); ?>" class="button">View PDF</a>
+    </div>
+  </div>
+
   <div class="footer">
     <img src="images/resources.webp" alt="" width="1000" height="667">
 
