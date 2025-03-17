@@ -127,7 +127,7 @@ src="https://www.facebook.com/tr?id=139642346563917&ev=PageView&noscript=1"
 
   <div class="footer">
     <h4>To Apply:</h4>
-    Email application to <?php email("contactus@rivcrete.com"); ?>, fax to <span>414-455-6069</span> or stop in at our 2761 S Chase Ave location
+    Email application to <?php email("contactus@rivcrete.com"); ?> or stop in at our 12005 W Hampton Ave location
   </div>
 </div>
 
