@@ -10,7 +10,7 @@ if ($responsekeys->success) {
     && $_POST['state'] != "" && $_POST['zip'] != "" && $_POST['phone'] != "" && $_POST['email'] != ""
   ) {
     $Subject = "Employment Application";
-    $SendTo = "contactus@rivcrete.com";
+    $SendTo = "jobs@rivcrete.com";
     $Headers = "From: Employment Application Form <donotreply@rivcrete.com>\r\n";
     $Headers .= "Reply-To: " . $_POST['email'] . "\r\n";
     $Headers .= "Bcc: foresitegroupllc@gmail.com\r\n";
