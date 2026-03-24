@@ -32,7 +32,7 @@ include "header.php";
   <div class="slides">
     <div class="cycle-slideshow" data-cycle-pager="#p-pager" data-cycle-pager-template="<a href=#>{{slideNum}}</a>">
       <img src="images/home-slider-award2.png" alt="" width="1000" height="667">
-      <img src="images/home-slider7.jpg" alt="" width="1000" height="667">
+      <img src="images/home-slider-make-a-wish.webp" alt="" width="1000" height="667">
       <img src="images/home-slider6.jpg" alt="" width="1000" height="667">
       <img src="images/home-slider-ascent.jpg" alt="" width="1000" height="667">
       <img src="images/home-slider-202412a.webp" alt="" width="1000" height="667">

@@ -19,6 +19,78 @@ include "header.php";
 <div class="portfolios">
   <div class="portfolio">
     <div class="port-title">
+      <h3>Froedtert Parking Structure</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        Located on the west end of the campus, this five-level, post-tensioned concrete facility accommodates approximately 2,400 vehicles and integrates a range of modern features. The structure also includes a skybridge connecting the parking structure to the patient tower across the street.  This building is now the largest parking structure in the State of Wisconsin.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/froedtert-parking-structure.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Ozaukee Country Club</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The Ozaukee Country Club pool renovation highlights decorative concrete excellence completed on an accelerated schedule. The 14,000-square-foot pool deck features a slate-textured stamped concrete finish with a pewter base color and dark gray release agent, creating a refined natural stone appearance.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/ozaukee-country-club.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>333 Apartment Tower</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        333 N. Water Street is a 33-story high-rise in downtown Milwaukee, located just north of the fashionable 3rd ward district. Mixes included a 5,000-psi mix for grade beams, an 8,000-psi mix for pile caps, mat foundations, and columns, and a 10,000-psi mix for shear walls and columns for the first 12 stories of the high-rise.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/333-apartment-tower.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
+      <h3>Alto-Shaam</h3>
+    </div>
+
+    <div class="port-text">
+      <div class="text">
+        The Alto-Shaam warehouse expansion required exceptional coordination, advanced finishing techniques, and an unwavering commitment to quality to deliver a flawless floor system that supports modern automation and sets a new benchmark for industrial concrete performance.
+      </div>
+    </div>
+
+    <div class="port-image cycle-slideshow" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-pager-template="<a href=#>0{{slideNum}}</a>">
+      <div style="background-image: url(images/alto-shaam.webp);"></div>
+
+      <span class="cycle-pager"></span>
+    </div>
+  </div> <!-- /.portfolio -->
+
+  <div class="portfolio">
+    <div class="port-title">
       <h3>The Couture</h3>
     </div>
 
