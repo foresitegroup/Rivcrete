@@ -17,7 +17,7 @@ include "header.php";
 
 <div class="site-width company">
   <div class="left">
-    Our three state-of-the-art concrete batch plants support each other along with over 60 ready mix trucks to accommodate multiple large projects simultaneously. In addition, we have established an expansive line of building products to provide our customers with any construction materials they may need, such as sealers, decorative products and other building materials. We are proudly the largest family owned ready mix company based in Milwaukee.<br>
+    Our four state-of-the-art concrete batch plants support each other along with over 60 ready mix trucks to accommodate multiple large projects simultaneously. In addition, we have established an expansive line of building products to provide our customers with any construction materials they may need, such as sealers, decorative products and other building materials. We are proudly the largest family owned ready mix company based in Milwaukee.<br>
     <br>
 
     Riv/Crete is owned and operated by the Rivecca family, which has decades of experience in the concrete and construction industry. As a family business, our company follows the same set of values:<br>
@@ -52,21 +52,24 @@ include "header.php";
       12005 West Hampton Ave.<br>
       Milwaukee, WI 53225<br>
       <strong class="yellowtext">P:</strong> (414) 455-6070<br>
-      <strong class="yellowtext">F:</strong> (414) 455-6069<br>
       <br>
 
       <h5>Riv/Crete Ready Mix</h5>
       2761 South Chase Ave.<br>
       Milwaukee, WI 53217<br>
       <strong class="yellowtext">P:</strong> (414) 455-6070<br>
-      <strong class="yellowtext">F:</strong> (414) 455-6069<br>
       <br>
 
       <h5>Riv/Crete Ready Mix</h5>
       4350 South 13th St.<br>
       Milwaukee, WI 53221<br>
       <strong class="yellowtext">P:</strong> (414) 455-6070<br>
-      <strong class="yellowtext">F:</strong> (414) 455-6069
+      <br>
+
+      <h5>Riv/Crete Ready Mix</h5>
+      2221 Raymond Avenue<br>
+      Franksville, WI 53126<br>
+      <strong class="yellowtext">P:</strong> (414) 455-6070<br>
     </div>
   </div>
 </div>

@@ -762,15 +762,8 @@ UL.double-space LI { padding-bottom: 1em; }
 #footer A { color: #FDC116; }
 
 #copyright {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1em;
-  letter-spacing: 0;
-  color: #808285;
+  color: #808285; font-weight: 600; font-size: 11px;
+  line-height: 1; letter-spacing: 0;
 }
 
 .page-header {
